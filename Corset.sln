@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{764B3347-6A90-47F1-AFDB-0CDF3B10EF58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E2D5A6A5-02AC-4A0E-A1FA-E31E5E2D1F3E}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Corset", "src\Corset\Corset.xproj", "{2DE26C22-1C5E-486A-AC8D-6A76D7256C8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BF0D01F7-4A40-4B0D-8971-6FBCF4B45549}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Corset.Tests", "Corset.Tests\Corset.Tests.xproj", "{F644D6B0-9A4A-48AF-ADAB-A9A78DB70063}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DE26C22-1C5E-486A-AC8D-6A76D7256C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE26C22-1C5E-486A-AC8D-6A76D7256C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE26C22-1C5E-486A-AC8D-6A76D7256C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE26C22-1C5E-486A-AC8D-6A76D7256C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F644D6B0-9A4A-48AF-ADAB-A9A78DB70063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F644D6B0-9A4A-48AF-ADAB-A9A78DB70063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F644D6B0-9A4A-48AF-ADAB-A9A78DB70063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F644D6B0-9A4A-48AF-ADAB-A9A78DB70063}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DE26C22-1C5E-486A-AC8D-6A76D7256C8F} = {764B3347-6A90-47F1-AFDB-0CDF3B10EF58}
+		{F644D6B0-9A4A-48AF-ADAB-A9A78DB70063} = {BF0D01F7-4A40-4B0D-8971-6FBCF4B45549}
+	EndGlobalSection
+EndGlobal
