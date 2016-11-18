@@ -1,25 +1,24 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>Corset</id>
     <version>$version$</version>
     <title>Corset</title>
     <authors>James Craig</authors>
-	<owners>James Craig</owners>
+    <owners>James Craig</owners>
     <licenseUrl>https://github.com/JaCraig/Corset/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/JaCraig/Corset</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <copyright>Copyright 2016</copyright>
     <tags>Compression GZip Deflate Decompression</tags>
-	<dependencies>
-		<dependency id="Microsoft.NETCore.Portable.Compatibility" version="1.0.1" />
-		<dependency id="NETStandard.Library" version="1.6.0" />
-		<dependency id="Canister.IoC" version="1.0.19" />
-	</dependencies>
+    <dependencies>
+      <dependency id="NETStandard.Library" version="1.6.0" />
+      <dependency id="Canister.IoC" version="1.0.26" />
+    </dependencies>
   </metadata>
   <files>
-		<file src="bin\Release\netstandard1.1\Corset.dll" target="lib\netstandard1.1\Corset.dll" />
-		<file src="bin\Release\netstandard1.1\Corset.xml" target="lib\netstandard1.1\Corset.xml" />
-	</files>
+    <file src="bin\Release\netstandard1.1\Corset.dll" target="lib\netstandard1.1\Corset.dll" />
+    <file src="bin\Release\netstandard1.1\Corset.xml" target="lib\netstandard1.1\Corset.xml" />
+  </files>
 </package>
