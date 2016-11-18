@@ -8,7 +8,7 @@
     "summary": "Corset is a library designed to simplify compression in .Net.",
     "projectUrl": "https://github.com/JaCraig/Corset",
     "licenseUrl": "https://github.com/JaCraig/Corset/blob/master/LICENSE",
-    "tags": [ "IoC", "DI", "Inversion of Control", "Dependency Injection" ]
+    "tags": [ "Compression", "GZip","Deflate","Decompression" ]
   },
   "dependencies": {
     "Canister.IoC": "1.0.19",
