@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "Corset",
   "version": "1.0.0",
   "authors": [ "James Craig" ],
@@ -11,7 +11,7 @@
     "tags": [ "Compression", "GZip", "Deflate", "Decompression" ]
   },
   "dependencies": {
-    "Canister.IoC": "1.0.31",
+    "Canister.IoC": "1.0.35",
     "NETStandard.Library": "1.6.1"
   },
   "frameworks": {

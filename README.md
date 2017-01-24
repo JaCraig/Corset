@@ -8,7 +8,9 @@ Corset is a library designed to simplify compression in .Net. By default it supp
 
 The system relies on an IoC wrapper called [Canister](https://github.com/JaCraig/Canister). While Canister has a built in IoC container, it's purpose is to actually wrap your container of choice in a way that simplifies setup and usage for other libraries that don't want to be tied to a specific IoC container. Corset uses it to detect and pull in compression providers. As such you must set up Canister in order to use Corset:
 
-    Canister.Builder.CreateContainer(new List<ServiceDescriptor>(), typeof(Corset).GetTypeInfo().Assembly);
+    Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
+                    .RegisterCorset()
+                    .Build();
 	
 This line is required prior to using the extension methods for the first time. Once Canister is set up, you can call the extension methods provided:
 

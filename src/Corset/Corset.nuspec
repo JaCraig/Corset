@@ -14,7 +14,7 @@
     <tags>Compression GZip Deflate Decompression</tags>
     <dependencies>
       <dependency id="NETStandard.Library" version="1.6.1" />
-      <dependency id="Canister.IoC" version="1.0.31" />
+      <dependency id="Canister.IoC" version="1.0.35" />
     </dependencies>
   </metadata>
   <files>
