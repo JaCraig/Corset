@@ -22,7 +22,7 @@ The Compress extension method works on both strings and byte arrays. It will als
 In order to Decompress the data, you simply call the Decompress extension method:
 
     string CompressedData = "This is a bit of data that I want to compress".Compress();
-	string DecompressedData = Data.Decompress();
+	string DecompressedData = CompressedData.Decompress();
 	
 Like the Compress extension, this method works on both strings and byte arrays. It allows you to specify which Encoding the string you want back should be in, if called on a string. By default it assumes a UTF8 encoding. The result from the Decompress function is either a string if called on a string, or a byte array if called on a byte array.
 
