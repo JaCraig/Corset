@@ -14,7 +14,7 @@ namespace Corset.Tests
         public void Compress()
         {
             var TestObject = new Corset(new ICompressor[] { new DeflateCompressor(), new GZipCompressor() });
-            string Data = "This is a bit of data that I want to compress";
+            const string Data = "This is a bit of data that I want to compress";
             Assert.Equal("CsnILFYAokSFpMwShfw0hZTEkkSFkozEEgVPhfLEvBKFknyF5PzcgqLU4mIAAAAA//8=", Convert.ToBase64String(TestObject.Compress(Data.ToByteArray(), CompressorType.Deflate)));
         }
 
@@ -30,7 +30,7 @@ namespace Corset.Tests
         public void Decompress()
         {
             var TestObject = new Corset(new ICompressor[] { new DeflateCompressor(), new GZipCompressor() });
-            string Data = "This is a bit of data that I want to compress";
+            const string Data = "This is a bit of data that I want to compress";
             Assert.Equal("This is a bit of data that I want to compress", TestObject.Decompress(TestObject.Compress(Data.ToByteArray(), CompressorType.Deflate), CompressorType.Deflate).ToString(null));
         }
     }

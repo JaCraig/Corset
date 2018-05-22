@@ -45,7 +45,7 @@ namespace Corset
         /// Gets or sets the compressors.
         /// </summary>
         /// <value>The compressors.</value>
-        public IDictionary<string, ICompressor> Compressors { get; private set; }
+        public IDictionary<string, ICompressor> Compressors { get; }
 
         /// <summary>
         /// Compresses the data
