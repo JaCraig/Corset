@@ -28,10 +28,7 @@ namespace Corset.Default
         /// <summary>
         /// Name
         /// </summary>
-        public override string Name
-        {
-            get { return "GZip"; }
-        }
+        public override string Name => "GZip";
 
         /// <summary>
         /// Gets the stream
@@ -39,9 +36,6 @@ namespace Corset.Default
         /// <param name="stream">Memory stream</param>
         /// <param name="compressionMode">Compression mode</param>
         /// <returns>The compressor stream</returns>
-        protected override Stream GetStream(MemoryStream stream, CompressionMode compressionMode)
-        {
-            return new GZipStream(stream, compressionMode, true);
-        }
+        protected override Stream GetStream(MemoryStream stream, CompressionMode compressionMode) => new GZipStream(stream, compressionMode, true);
     }
 }

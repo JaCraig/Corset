@@ -33,12 +33,12 @@ namespace Corset
         /// <param name="data">Data to compress</param>
         /// <param name="compressorType">Compression type</param>
         /// <returns>The compressed data</returns>
-        public static byte[] Compress(this byte[] data, CompressorType compressorType = null)
+        public static byte[]? Compress(this byte[]? data, CompressorType? compressorType = null)
         {
             if (data == null)
                 return data;
-            compressorType = compressorType ?? CompressorType.Deflate;
-            return Canister.Builder.Bootstrapper.Resolve<Corset>().Compress(data, compressorType);
+            compressorType ??= CompressorType.Deflate;
+            return Canister.Builder.Bootstrapper?.Resolve<Corset>().Compress(data, compressorType);
         }
 
         /// <summary>
@@ -48,12 +48,12 @@ namespace Corset
         /// <param name="encodingUsing">Encoding that the data uses (defaults to UTF8)</param>
         /// <param name="compressorType">The compression type used</param>
         /// <returns>The data Compressed</returns>
-        public static string Compress(this string data, Encoding encodingUsing = null, CompressorType compressorType = null)
+        public static string? Compress(this string? data, Encoding? encodingUsing = null, CompressorType? compressorType = null)
         {
             if (data == null)
                 return data;
-            compressorType = compressorType ?? CompressorType.Deflate;
-            encodingUsing = encodingUsing ?? Encoding.UTF8;
+            compressorType ??= CompressorType.Deflate;
+            encodingUsing ??= Encoding.UTF8;
             return Convert.ToBase64String(ToByteArray(data, encodingUsing).Compress(compressorType));
         }
 
@@ -63,10 +63,7 @@ namespace Corset
         /// <param name="data">Data to compress</param>
         /// <param name="compressorType">Compression type</param>
         /// <returns>The compressed data</returns>
-        public static byte[] Compress(this byte[] data, string compressorType)
-        {
-            return data.Compress((CompressorType)compressorType);
-        }
+        public static byte[]? Compress(this byte[]? data, string compressorType) => data.Compress((CompressorType)compressorType);
 
         /// <summary>
         /// Compresses a string of data
@@ -75,10 +72,7 @@ namespace Corset
         /// <param name="encodingUsing">Encoding that the data uses (defaults to UTF8)</param>
         /// <param name="compressorType">The compression type used</param>
         /// <returns>The data Compressed</returns>
-        public static string Compress(this string data, Encoding encodingUsing, string compressorType)
-        {
-            return data.Compress(encodingUsing, (CompressorType)compressorType);
-        }
+        public static string? Compress(this string? data, Encoding? encodingUsing, string compressorType) => data.Compress(encodingUsing, (CompressorType)compressorType);
 
         /// <summary>
         /// Decompresses the byte array that is sent in
@@ -86,12 +80,12 @@ namespace Corset
         /// <param name="data">Data to decompress</param>
         /// <param name="compressorType">The compression type used</param>
         /// <returns>The data decompressed</returns>
-        public static byte[] Decompress(this byte[] data, CompressorType compressorType = null)
+        public static byte[]? Decompress(this byte[]? data, CompressorType? compressorType = null)
         {
             if (data == null)
                 return data;
-            compressorType = compressorType ?? CompressorType.Deflate;
-            return Canister.Builder.Bootstrapper.Resolve<Corset>().Decompress(data, compressorType);
+            compressorType ??= CompressorType.Deflate;
+            return Canister.Builder.Bootstrapper?.Resolve<Corset>().Decompress(data, compressorType);
         }
 
         /// <summary>
@@ -101,14 +95,16 @@ namespace Corset
         /// <param name="encodingUsing">Encoding that the result should use (defaults to UTF8)</param>
         /// <param name="compressorType">The compression type used</param>
         /// <returns>The data decompressed</returns>
-        public static string Decompress(this string data, Encoding encodingUsing = null, CompressorType compressorType = null)
+        public static string? Decompress(this string? data, Encoding? encodingUsing = null, CompressorType? compressorType = null)
         {
             if (data == null)
                 return data;
-            compressorType = compressorType ?? CompressorType.Deflate;
-            encodingUsing = encodingUsing ?? Encoding.UTF8;
-            var TempArray = Convert.FromBase64String(data);
+            compressorType ??= CompressorType.Deflate;
+            encodingUsing ??= Encoding.UTF8;
+            byte[]? TempArray = Convert.FromBase64String(data);
             TempArray = TempArray.Decompress(compressorType);
+            if (TempArray == null)
+                return null;
             return encodingUsing.GetString(TempArray, 0, TempArray.Length);
         }
 
@@ -118,10 +114,7 @@ namespace Corset
         /// <param name="data">Data to decompress</param>
         /// <param name="compressorType">The compression type used</param>
         /// <returns>The data decompressed</returns>
-        public static byte[] Decompress(this byte[] data, string compressorType)
-        {
-            return data.Decompress((CompressorType)compressorType);
-        }
+        public static byte[]? Decompress(this byte[]? data, string compressorType) => data.Decompress((CompressorType)compressorType);
 
         /// <summary>
         /// Decompresses a string of data
@@ -130,10 +123,7 @@ namespace Corset
         /// <param name="encodingUsing">Encoding that the result should use (defaults to UTF8)</param>
         /// <param name="compressorType">The compression type used</param>
         /// <returns>The data decompressed</returns>
-        public static string Decompress(this string data, Encoding encodingUsing, string compressorType)
-        {
-            return data.Decompress(encodingUsing, (CompressorType)compressorType);
-        }
+        public static string? Decompress(this string? data, Encoding? encodingUsing, string compressorType) => data.Decompress(encodingUsing, (CompressorType)compressorType);
 
         /// <summary>
         /// Converts a string to a byte array
@@ -141,10 +131,10 @@ namespace Corset
         /// <param name="input">input string</param>
         /// <param name="encodingUsing">The type of encoding the string is using (defaults to UTF8)</param>
         /// <returns>the byte array representing the string</returns>
-        private static byte[] ToByteArray(string input, Encoding encodingUsing = null)
+        private static byte[] ToByteArray(string input, Encoding? encodingUsing = null)
         {
-            encodingUsing = encodingUsing ?? Encoding.UTF8;
-            return string.IsNullOrEmpty(input) ? new byte[0] : encodingUsing.GetBytes(input);
+            encodingUsing ??= Encoding.UTF8;
+            return string.IsNullOrEmpty(input) ? Array.Empty<byte>() : encodingUsing.GetBytes(input);
         }
     }
 }

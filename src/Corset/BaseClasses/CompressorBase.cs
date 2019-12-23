@@ -47,18 +47,13 @@ namespace Corset.BaseClasses
         {
             if (data == null)
                 throw new ArgumentNullException(nameof(data));
-            using (MemoryStream Stream = new MemoryStream())
-            {
-                using (Stream ZipStream = GetStream(Stream, CompressionMode.Compress))
-                {
-                    if (ZipStream != null)
-                    {
-                        ZipStream.Write(data, 0, data.Length);
-                        ZipStream.Flush();
-                    }
-                    return Stream.ToArray();
-                }
-            }
+            using var Stream = new MemoryStream();
+            using var ZipStream = GetStream(Stream, CompressionMode.Compress);
+            if (ZipStream == null)
+                return Array.Empty<byte>();
+            ZipStream.Write(data, 0, data.Length);
+            ZipStream.Flush();
+            return Stream.ToArray();
         }
 
         /// <summary>
@@ -70,26 +65,19 @@ namespace Corset.BaseClasses
         {
             if (data == null)
                 throw new ArgumentNullException(nameof(data));
-            using (MemoryStream Stream = new MemoryStream())
+            using var Stream = new MemoryStream();
+            using var DataStream = new MemoryStream(data);
+            using var ZipStream = GetStream(DataStream, CompressionMode.Decompress);
+            if (ZipStream == null)
+                return Array.Empty<byte>();
+            var Buffer = new byte[4096];
+            while (true)
             {
-                using (MemoryStream DataStream = new MemoryStream(data))
-                {
-                    using (Stream ZipStream = GetStream(DataStream, CompressionMode.Decompress))
-                    {
-                        if (ZipStream != null)
-                        {
-                            byte[] Buffer = new byte[4096];
-                            while (true)
-                            {
-                                int Size = ZipStream.Read(Buffer, 0, Buffer.Length);
-                                if (Size > 0) Stream.Write(Buffer, 0, Size);
-                                else break;
-                            }
-                        }
-                        return Stream.ToArray();
-                    }
-                }
+                var Size = ZipStream.Read(Buffer, 0, Buffer.Length);
+                if (Size > 0) Stream.Write(Buffer, 0, Size);
+                else break;
             }
+            return Stream.ToArray();
         }
 
         /// <summary>

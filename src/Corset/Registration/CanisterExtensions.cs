@@ -15,11 +15,7 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace Corset.Registration
 {
@@ -33,9 +29,6 @@ namespace Corset.Registration
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper</returns>
-        public static IBootstrapper RegisterCorset(this IBootstrapper bootstrapper)
-        {
-            return bootstrapper.AddAssembly(typeof(Corset).GetTypeInfo().Assembly);
-        }
+        public static IBootstrapper RegisterCorset(this IBootstrapper bootstrapper) => bootstrapper.AddAssembly(typeof(Corset).GetTypeInfo().Assembly);
     }
 }

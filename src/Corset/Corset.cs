@@ -33,9 +33,9 @@ namespace Corset
         /// <param name="compressors">The compressors.</param>
         public Corset(IEnumerable<ICompressor> compressors)
         {
-            compressors = compressors ?? new List<ICompressor>();
+            compressors ??= new List<ICompressor>();
             Compressors = new Dictionary<string, ICompressor>();
-            foreach (ICompressor Compressor in compressors)
+            foreach (var Compressor in compressors)
             {
                 Compressors.Add(Compressor.Name, Compressor);
             }
@@ -53,11 +53,11 @@ namespace Corset
         /// <param name="data">The data.</param>
         /// <param name="compressor">The compressor.</param>
         /// <returns>The compressed data</returns>
-        public byte[] Compress(byte[] data, CompressorType compressor)
+        public byte[]? Compress(byte[] data, CompressorType compressor)
         {
             if (data == null)
                 return data;
-            compressor = compressor ?? CompressorType.Deflate;
+            compressor ??= CompressorType.Deflate;
             return Compressors.ContainsKey(compressor) ? Compressors[compressor].Compress(data) : data;
         }
 
@@ -67,11 +67,11 @@ namespace Corset
         /// <param name="data">Data to decompress</param>
         /// <param name="compressor">Compressor name</param>
         /// <returns>The decompressed data</returns>
-        public byte[] Decompress(byte[] data, CompressorType compressor)
+        public byte[]? Decompress(byte[] data, CompressorType compressor)
         {
             if (data == null)
                 return data;
-            compressor = compressor ?? CompressorType.Deflate;
+            compressor ??= CompressorType.Deflate;
             return Compressors.ContainsKey(compressor) ? Compressors[compressor].Decompress(data) : data;
         }
 
@@ -83,8 +83,8 @@ namespace Corset
         {
             var Builder = new StringBuilder();
             Builder.Append("Compressors: ");
-            string Separator = "";
-            foreach (string key in Compressors.Keys.OrderBy(x => x))
+            var Separator = "";
+            foreach (var key in Compressors.Keys.OrderBy(x => x))
             {
                 Builder.AppendFormat("{0}{1}", Separator, key);
                 Separator = ",";

@@ -10,22 +10,23 @@
     <Description>Corset is a library designed to simplify compression in .Net.</Description>
     <AssemblyTitle>Corset</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Corset</AssemblyName>
     <PackageId>Corset</PackageId>
     <PackageTags>Compression;GZip;Deflate;Decompression</PackageTags>
     <PackageProjectUrl>https://github.com/JaCraig/Corset</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/JaCraig/Corset/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>2.0.$(BuildNumber)</Version>
+    <Version>3.0.$(BuildNumber)</Version>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Canister.IoC" Version="2.1.2" />
+    <PackageReference Include="Canister.IoC" Version="3.0.0" />
   </ItemGroup>
 
 </Project>
