@@ -1,6 +1,4 @@
-﻿using Corset.Registration;
-using Microsoft.Extensions.DependencyInjection;
-using System.Collections.Generic;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
 namespace Corset.Tests.BaseClasses
@@ -12,9 +10,7 @@ namespace Corset.Tests.BaseClasses
         {
             if (Canister.Builder.Bootstrapper == null)
             {
-                Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                   .RegisterCorset()
-                   .Build();
+                new ServiceCollection().AddCanisterModules(x => x.RegisterCorset());
             }
         }
     }

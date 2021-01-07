@@ -15,9 +15,8 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
-using System.Reflection;
 
-namespace Corset.Registration
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Registration extension methods
@@ -29,6 +28,6 @@ namespace Corset.Registration
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper</returns>
-        public static IBootstrapper RegisterCorset(this IBootstrapper bootstrapper) => bootstrapper.AddAssembly(typeof(Corset).GetTypeInfo().Assembly);
+        public static ICanisterConfiguration? RegisterCorset(this ICanisterConfiguration? bootstrapper) => bootstrapper?.AddAssembly(typeof(Corset.Corset).Assembly);
     }
 }
