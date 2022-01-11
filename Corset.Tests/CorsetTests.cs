@@ -8,7 +8,7 @@ using Xunit;
 
 namespace Corset.Tests
 {
-    public class CorsetTests : TestBaseClass
+    public class CorsetTests : TestBaseClass<Corset>
     {
         [Fact]
         public void Compress()

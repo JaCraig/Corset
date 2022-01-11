@@ -55,10 +55,10 @@ namespace Corset
         /// <returns>The compressed data</returns>
         public byte[]? Compress(byte[] data, CompressorType compressor)
         {
-            if (data == null)
+            if (data is null)
                 return data;
             compressor ??= CompressorType.Deflate;
-            return Compressors.ContainsKey(compressor) ? Compressors[compressor].Compress(data) : data;
+            return Compressors.ContainsKey(compressor ?? "") ? Compressors[compressor].Compress(data) : data;
         }
 
         /// <summary>
@@ -69,10 +69,10 @@ namespace Corset
         /// <returns>The decompressed data</returns>
         public byte[]? Decompress(byte[] data, CompressorType compressor)
         {
-            if (data == null)
+            if (data is null)
                 return data;
             compressor ??= CompressorType.Deflate;
-            return Compressors.ContainsKey(compressor) ? Compressors[compressor].Decompress(data) : data;
+            return Compressors.ContainsKey(compressor ?? "") ? Compressors[compressor].Decompress(data) : data;
         }
 
         /// <summary>

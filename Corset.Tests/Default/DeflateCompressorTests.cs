@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Corset.Tests.Default
 {
-    public class DeflateCompressorTests : TestBaseClass
+    public class DeflateCompressorTests : TestBaseClass<DeflateCompressor>
     {
         [Fact]
         public void Compress()

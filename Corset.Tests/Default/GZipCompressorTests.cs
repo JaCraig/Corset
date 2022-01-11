@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Corset.Tests.Default
 {
-    public class GZipCompressorTests : TestBaseClass
+    public class GZipCompressorTests : TestBaseClass<GZipCompressor>
     {
         [Fact]
         public void Compress()

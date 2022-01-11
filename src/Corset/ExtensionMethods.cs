@@ -35,7 +35,7 @@ namespace Corset
         /// <returns>The compressed data</returns>
         public static byte[]? Compress(this byte[]? data, CompressorType? compressorType = null)
         {
-            if (data == null)
+            if (data is null)
                 return data;
             compressorType ??= CompressorType.Deflate;
             return Canister.Builder.Bootstrapper?.Resolve<Corset>().Compress(data, compressorType);
@@ -50,7 +50,7 @@ namespace Corset
         /// <returns>The data Compressed</returns>
         public static string? Compress(this string? data, Encoding? encodingUsing = null, CompressorType? compressorType = null)
         {
-            if (data == null)
+            if (data is null)
                 return data;
             compressorType ??= CompressorType.Deflate;
             encodingUsing ??= Encoding.UTF8;
@@ -82,7 +82,7 @@ namespace Corset
         /// <returns>The data decompressed</returns>
         public static byte[]? Decompress(this byte[]? data, CompressorType? compressorType = null)
         {
-            if (data == null)
+            if (data is null)
                 return data;
             compressorType ??= CompressorType.Deflate;
             return Canister.Builder.Bootstrapper?.Resolve<Corset>().Decompress(data, compressorType);
@@ -97,13 +97,13 @@ namespace Corset
         /// <returns>The data decompressed</returns>
         public static string? Decompress(this string? data, Encoding? encodingUsing = null, CompressorType? compressorType = null)
         {
-            if (data == null)
+            if (data is null)
                 return data;
             compressorType ??= CompressorType.Deflate;
             encodingUsing ??= Encoding.UTF8;
             byte[]? TempArray = Convert.FromBase64String(data);
             TempArray = TempArray.Decompress(compressorType);
-            if (TempArray == null)
+            if (TempArray is null)
                 return null;
             return encodingUsing.GetString(TempArray, 0, TempArray.Length);
         }

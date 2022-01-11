@@ -1,12 +1,15 @@
 ﻿using Corset.Enums;
 using Corset.Tests.BaseClasses;
 using Corset.Tests.HelperFunctions;
+using System;
 using Xunit;
 
 namespace Corset.Tests
 {
     public class ExtensionMethods : TestBaseClass
     {
+        protected override Type ObjectType { get; set; } = typeof(CompressionExtensions);
+
         [Fact]
         public void DeflateTest()
         {

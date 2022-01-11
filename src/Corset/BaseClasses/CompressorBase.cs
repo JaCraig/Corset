@@ -45,11 +45,11 @@ namespace Corset.BaseClasses
         /// <returns>Compressed data</returns>
         public byte[] Compress(byte[] data)
         {
-            if (data == null)
+            if (data is null)
                 throw new ArgumentNullException(nameof(data));
             using var Stream = new MemoryStream();
             using var ZipStream = GetStream(Stream, CompressionMode.Compress);
-            if (ZipStream == null)
+            if (ZipStream is null)
                 return Array.Empty<byte>();
             ZipStream.Write(data, 0, data.Length);
             ZipStream.Flush();
@@ -63,12 +63,12 @@ namespace Corset.BaseClasses
         /// <returns>The decompressed data</returns>
         public byte[] Decompress(byte[] data)
         {
-            if (data == null)
+            if (data is null)
                 throw new ArgumentNullException(nameof(data));
             using var Stream = new MemoryStream();
             using var DataStream = new MemoryStream(data);
             using var ZipStream = GetStream(DataStream, CompressionMode.Decompress);
-            if (ZipStream == null)
+            if (ZipStream is null)
                 return Array.Empty<byte>();
             var Buffer = new byte[4096];
             while (true)
