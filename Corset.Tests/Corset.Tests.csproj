@@ -4,7 +4,7 @@
     <Description>Tests for Corset</Description>
     <AssemblyTitle>Corset.Tests</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+	  <TargetFrameworks>net5.0;net6.0;netcoreapp3.1</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>Corset.Tests</AssemblyName>
     <PackageId>Corset.Tests</PackageId>
@@ -24,9 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mecha.xUnit" Version="1.0.37" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+    <PackageReference Include="Mecha.xUnit" Version="1.0.38" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
