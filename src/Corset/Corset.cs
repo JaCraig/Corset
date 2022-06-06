@@ -58,7 +58,8 @@ namespace Corset
             if (data is null)
                 return data;
             compressor ??= CompressorType.Deflate;
-            return Compressors.ContainsKey(compressor ?? "") ? Compressors[compressor].Compress(data) : data;
+            var Key = compressor ?? "";
+            return Compressors.ContainsKey(Key) ? Compressors[Key].Compress(data) : data;
         }
 
         /// <summary>
@@ -72,7 +73,8 @@ namespace Corset
             if (data is null)
                 return data;
             compressor ??= CompressorType.Deflate;
-            return Compressors.ContainsKey(compressor ?? "") ? Compressors[compressor].Decompress(data) : data;
+            var Key = compressor ?? "";
+            return Compressors.ContainsKey(Key) ? Compressors[Key].Decompress(data) : data;
         }
 
         /// <summary>

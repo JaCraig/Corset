@@ -35,10 +35,10 @@ namespace Corset.Module
         /// Loads the module using the bootstrapper
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
-        public void Load(IBootstrapper bootstrapper)
+        public void Load(IBootstrapper? bootstrapper)
         {
-            bootstrapper.RegisterAll<ICompressor>();
-            bootstrapper.Register<Corset>(ServiceLifetime.Singleton);
+            bootstrapper?.RegisterAll<ICompressor>()
+                .Register<Corset>(ServiceLifetime.Singleton);
         }
     }
 }

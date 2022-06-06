@@ -10,7 +10,7 @@
     <Description>Corset is a library designed to simplify compression in .Net.</Description>
     <AssemblyTitle>Corset</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFrameworks>netstandard2.1;net5.0;net6.0;netcoreapp3.1</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Corset</AssemblyName>
     <PackageId>Corset</PackageId>

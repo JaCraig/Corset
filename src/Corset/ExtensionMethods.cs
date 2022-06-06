@@ -54,7 +54,7 @@ namespace Corset
                 return data;
             compressorType ??= CompressorType.Deflate;
             encodingUsing ??= Encoding.UTF8;
-            return Convert.ToBase64String(ToByteArray(data, encodingUsing).Compress(compressorType));
+            return Convert.ToBase64String(ToByteArray(data, encodingUsing).Compress(compressorType) ?? Array.Empty<byte>());
         }
 
         /// <summary>
