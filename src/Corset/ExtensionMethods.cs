@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Corset.Enums;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.ComponentModel;
 using System.Text;
@@ -28,6 +29,36 @@ namespace Corset
     public static class CompressionExtensions
     {
         /// <summary>
+        /// Gets the service provider.
+        /// </summary>
+        /// <value>The service provider.</value>
+        private static IServiceProvider? ServiceProvider
+        {
+            get
+            {
+                if (_ServiceProvider is not null)
+                    return _ServiceProvider;
+                lock (ServiceProviderLock)
+                {
+                    if (_ServiceProvider is not null)
+                        return _ServiceProvider;
+                    _ServiceProvider = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
+                }
+                return _ServiceProvider;
+            }
+        }
+
+        /// <summary>
+        /// The service provider lock
+        /// </summary>
+        private static readonly object ServiceProviderLock = new object();
+
+        /// <summary>
+        /// The service provider
+        /// </summary>
+        private static IServiceProvider? _ServiceProvider;
+
+        /// <summary>
         /// Compresses the data using the specified compression type
         /// </summary>
         /// <param name="data">Data to compress</param>
@@ -38,7 +69,7 @@ namespace Corset
             if (data is null)
                 return data;
             compressorType ??= CompressorType.Deflate;
-            return Canister.Builder.Bootstrapper?.Resolve<Corset>().Compress(data, compressorType);
+            return ServiceProvider?.GetService<Corset>()?.Compress(data, compressorType);
         }
 
         /// <summary>
@@ -85,7 +116,7 @@ namespace Corset
             if (data is null)
                 return data;
             compressorType ??= CompressorType.Deflate;
-            return Canister.Builder.Bootstrapper?.Resolve<Corset>().Decompress(data, compressorType);
+            return ServiceProvider?.GetService<Corset>()?.Decompress(data, compressorType);
         }
 
         /// <summary>
