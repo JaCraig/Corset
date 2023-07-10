@@ -14,8 +14,8 @@ namespace Corset.Tests.Default
             var TestObject = new GZipCompressor();
             const string Data = "This is a bit of data that I want to compress";
             var Result = Convert.ToBase64String(TestObject.Compress(Data.ToByteArray()));
-            Assert.Equal("H4sIAAAAAAAAAwrJyCxWAKJEhaTMEoX8NIWUxJJEhZKMxBIFT4", Result);
-            Assert.Contains(Result, new string[] { "H4sIAAAAAAAACgrJyCxWAKJEhaTMEoX8NIWUxJJEhZKMxBIFT4XyxLwShZJ8heT83IKi1OJiAAAAAP//", "H4sIAAAAAAAAAwrJyCxWAKJEhaTMEoX8NIWUxJJEhZKMxBIFT4" });
+            Assert.Equal("H4sIAAAAAAAAAwrJyCxWAKJEhaTMEoX8NIWUxJJEhZKMxBIFT4XyxLwShZJ8heT83IKi1OJiAAAAAP//", Result);
+            Assert.Contains(Result, new string[] { "H4sIAAAAAAAACgrJyCxWAKJEhaTMEoX8NIWUxJJEhZKMxBIFT4XyxLwShZJ8heT83IKi1OJiAAAAAP//", "H4sIAAAAAAAAAwrJyCxWAKJEhaTMEoX8NIWUxJJEhZKMxBIFT4XyxLwShZJ8heT83IKi1OJiAAAAAP" });
         }
 
         [Fact]
