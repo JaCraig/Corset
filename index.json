@@ -1,0 +1,92 @@
+{
+  "api/Corset.BaseClasses.CompressorBase.html": {
+    "href": "api/Corset.BaseClasses.CompressorBase.html",
+    "title": "Class CompressorBase | Corset API Reference",
+    "keywords": "Class CompressorBase Compressor base class Inheritance object CompressorBase DeflateCompressor GZipCompressor Implements ICompressor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Corset.BaseClasses Assembly: Corset.dll Syntax public abstract class CompressorBase : ICompressor Constructors | Improve this Doc View Source CompressorBase() Constructor Declaration protected CompressorBase() Properties | Improve this Doc View Source Name Compressor name Declaration public abstract string Name { get; } Property Value Type Description string Methods | Improve this Doc View Source Compress(byte[]) Compresses the byte array Declaration public byte[] Compress(byte[] data) Parameters Type Name Description byte[] data Data to compress Returns Type Description byte[] Compressed data | Improve this Doc View Source Decompress(byte[]) Decompresses the data Declaration public byte[] Decompress(byte[] data) Parameters Type Name Description byte[] data Data to decompress Returns Type Description byte[] The decompressed data | Improve this Doc View Source GetStream(MemoryStream, CompressionMode) Gets the stream used to compress/decompress the data Declaration protected abstract Stream GetStream(MemoryStream stream, CompressionMode compressionMode) Parameters Type Name Description MemoryStream stream Memory stream used CompressionMode compressionMode Compression mode Returns Type Description Stream The stream used to compress/decompress the data Implements ICompressor"
+  },
+  "api/Corset.BaseClasses.html": {
+    "href": "api/Corset.BaseClasses.html",
+    "title": "Namespace Corset.BaseClasses | Corset API Reference",
+    "keywords": "Namespace Corset.BaseClasses Classes CompressorBase Compressor base class"
+  },
+  "api/Corset.Corset.html": {
+    "href": "api/Corset.Corset.html",
+    "title": "Class Corset | Corset API Reference",
+    "keywords": "Class Corset Main class used to interact with the compression system Inheritance object Corset Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Namespace: Corset Assembly: Corset.dll Syntax public class Corset Constructors | Improve this Doc View Source Corset(IEnumerable<ICompressor>) Initializes a new instance of the Corset class. Declaration public Corset(IEnumerable<ICompressor> compressors) Parameters Type Name Description IEnumerable<ICompressor> compressors The compressors. Properties | Improve this Doc View Source Compressors Gets or sets the compressors. Declaration public IDictionary<string, ICompressor> Compressors { get; } Property Value Type Description IDictionary<string, ICompressor> The compressors. Methods | Improve this Doc View Source Compress(byte[], CompressorType) Compresses the data Declaration public byte[]? Compress(byte[] data, CompressorType compressor) Parameters Type Name Description byte[] data The data. CompressorType compressor The compressor. Returns Type Description byte[] The compressed data | Improve this Doc View Source Decompress(byte[], CompressorType) Decompresses the data Declaration public byte[]? Decompress(byte[] data, CompressorType compressor) Parameters Type Name Description byte[] data Data to decompress CompressorType compressor Compressor name Returns Type Description byte[] The decompressed data | Improve this Doc View Source ToString() String info for the manager Declaration public override string ToString() Returns Type Description string The string info that the manager contains Overrides object.ToString()"
+  },
+  "api/Corset.Default.DeflateCompressor.html": {
+    "href": "api/Corset.Default.DeflateCompressor.html",
+    "title": "Class DeflateCompressor | Corset API Reference",
+    "keywords": "Class DeflateCompressor Deflate compressor Inheritance object CompressorBase DeflateCompressor Implements ICompressor Inherited Members CompressorBase.Compress(byte[]) CompressorBase.Decompress(byte[]) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Corset.Default Assembly: Corset.dll Syntax public class DeflateCompressor : CompressorBase, ICompressor Properties | Improve this Doc View Source Name Name Declaration public override string Name { get; } Property Value Type Description string Overrides CompressorBase.Name Methods | Improve this Doc View Source GetStream(MemoryStream, CompressionMode) Gets the stream Declaration protected override Stream GetStream(MemoryStream stream, CompressionMode compressionMode) Parameters Type Name Description MemoryStream stream Memory stream CompressionMode compressionMode Compression mode Returns Type Description Stream The compressor stream Overrides CompressorBase.GetStream(MemoryStream, CompressionMode) Implements ICompressor"
+  },
+  "api/Corset.Default.GZipCompressor.html": {
+    "href": "api/Corset.Default.GZipCompressor.html",
+    "title": "Class GZipCompressor | Corset API Reference",
+    "keywords": "Class GZipCompressor GZip compressor Inheritance object CompressorBase GZipCompressor Implements ICompressor Inherited Members CompressorBase.Compress(byte[]) CompressorBase.Decompress(byte[]) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Corset.Default Assembly: Corset.dll Syntax public class GZipCompressor : CompressorBase, ICompressor Properties | Improve this Doc View Source Name Name Declaration public override string Name { get; } Property Value Type Description string Overrides CompressorBase.Name Methods | Improve this Doc View Source GetStream(MemoryStream, CompressionMode) Gets the stream Declaration protected override Stream GetStream(MemoryStream stream, CompressionMode compressionMode) Parameters Type Name Description MemoryStream stream Memory stream CompressionMode compressionMode Compression mode Returns Type Description Stream The compressor stream Overrides CompressorBase.GetStream(MemoryStream, CompressionMode) Implements ICompressor"
+  },
+  "api/Corset.Default.html": {
+    "href": "api/Corset.Default.html",
+    "title": "Namespace Corset.Default | Corset API Reference",
+    "keywords": "Namespace Corset.Default Classes DeflateCompressor Deflate compressor GZipCompressor GZip compressor"
+  },
+  "api/Corset.Enums.CompressorType.html": {
+    "href": "api/Corset.Enums.CompressorType.html",
+    "title": "Class CompressorType | Corset API Reference",
+    "keywords": "Class CompressorType Defines the compressor types in an enum like static class Inheritance object CompressorType Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Namespace: Corset.Enums Assembly: Corset.dll Syntax public class CompressorType Constructors | Improve this Doc View Source CompressorType(string) Initializes a new instance of the CompressorType class. Declaration protected CompressorType(string name) Parameters Type Name Description string name The name. Properties | Improve this Doc View Source Deflate Gets the deflate compressor type. Declaration public static CompressorType Deflate { get; } Property Value Type Description CompressorType The deflate compressor type. | Improve this Doc View Source GZip Gets the GZip compressor type. Declaration public static CompressorType GZip { get; } Property Value Type Description CompressorType The GZip compressor type. Methods | Improve this Doc View Source ToString() Returns a string that represents this instance. Declaration public override string ToString() Returns Type Description string A string that represents this instance. Overrides object.ToString() Operators | Improve this Doc View Source explicit operator CompressorType(string) Performs an explicit conversion from string to CompressorType. Declaration public static explicit operator CompressorType(string compressorType) Parameters Type Name Description string compressorType Type of the compressor. Returns Type Description CompressorType The result of the conversion. | Improve this Doc View Source implicit operator string(CompressorType) Performs an explicit conversion from CompressorType to string. Declaration public static implicit operator string(CompressorType compressorType) Parameters Type Name Description CompressorType compressorType Type of the compressor. Returns Type Description string The result of the conversion."
+  },
+  "api/Corset.Enums.html": {
+    "href": "api/Corset.Enums.html",
+    "title": "Namespace Corset.Enums | Corset API Reference",
+    "keywords": "Namespace Corset.Enums Classes CompressorType Defines the compressor types in an enum like static class"
+  },
+  "api/Corset.html": {
+    "href": "api/Corset.html",
+    "title": "Namespace Corset | Corset API Reference",
+    "keywords": "Namespace Corset Classes Corset Main class used to interact with the compression system"
+  },
+  "api/Corset.Interfaces.html": {
+    "href": "api/Corset.Interfaces.html",
+    "title": "Namespace Corset.Interfaces | Corset API Reference",
+    "keywords": "Namespace Corset.Interfaces Interfaces ICompressor Compressor interface"
+  },
+  "api/Corset.Interfaces.ICompressor.html": {
+    "href": "api/Corset.Interfaces.ICompressor.html",
+    "title": "Interface ICompressor | Corset API Reference",
+    "keywords": "Interface ICompressor Compressor interface Namespace: Corset.Interfaces Assembly: Corset.dll Syntax public interface ICompressor Properties | Improve this Doc View Source Name Compressor name Declaration string Name { get; } Property Value Type Description string Methods | Improve this Doc View Source Compress(byte[]) Compresses the data Declaration byte[] Compress(byte[] data) Parameters Type Name Description byte[] data Data to compress Returns Type Description byte[] Compressed data | Improve this Doc View Source Decompress(byte[]) Decompresses the data Declaration byte[] Decompress(byte[] data) Parameters Type Name Description byte[] data Data to decompress Returns Type Description byte[] The decompressed data"
+  },
+  "api/Corset.Module.CorsetModule.html": {
+    "href": "api/Corset.Module.CorsetModule.html",
+    "title": "Class CorsetModule | Corset API Reference",
+    "keywords": "Class CorsetModule Corset's IoC module Inheritance object CorsetModule Implements IModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Corset.Module Assembly: Corset.dll Syntax public class CorsetModule : IModule Properties | Improve this Doc View Source Order Order to run this in Declaration public int Order { get; } Property Value Type Description int See Also IModule Methods | Improve this Doc View Source Load(IServiceCollection?) Loads the module using the bootstrapper Declaration public void Load(IServiceCollection? bootstrapper) Parameters Type Name Description IServiceCollection bootstrapper The bootstrapper. See Also IModule Implements IModule See Also IModule"
+  },
+  "api/Corset.Module.html": {
+    "href": "api/Corset.Module.html",
+    "title": "Namespace Corset.Module | Corset API Reference",
+    "keywords": "Namespace Corset.Module Classes CorsetModule Corset's IoC module"
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "Welcome | Corset API Reference",
+    "keywords": "Welcome Welcome to the API browser."
+  },
+  "api/Microsoft.Extensions.DependencyInjection.html": {
+    "href": "api/Microsoft.Extensions.DependencyInjection.html",
+    "title": "Namespace Microsoft.Extensions.DependencyInjection | Corset API Reference",
+    "keywords": "Namespace Microsoft.Extensions.DependencyInjection Classes Registration Registration extension methods"
+  },
+  "api/Microsoft.Extensions.DependencyInjection.Registration.html": {
+    "href": "api/Microsoft.Extensions.DependencyInjection.Registration.html",
+    "title": "Class Registration | Corset API Reference",
+    "keywords": "Class Registration Registration extension methods Inheritance object Registration Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Microsoft.Extensions.DependencyInjection Assembly: Corset.dll Syntax public static class Registration Methods | Improve this Doc View Source RegisterCorset(ICanisterConfiguration?) Registers the aspectus library with the bootstrapper. Declaration public static ICanisterConfiguration? RegisterCorset(this ICanisterConfiguration? bootstrapper) Parameters Type Name Description ICanisterConfiguration bootstrapper The bootstrapper. Returns Type Description ICanisterConfiguration The bootstrapper"
+  },
+  "articles/intro.html": {
+    "href": "articles/intro.html",
+    "title": "Code | Corset API Reference",
+    "keywords": "Code using Microsoft.Extensions.DependencyInjection; namespace Corset.Example { /// <summary> /// This is a simple example of how to use Corset /// </summary> internal class Program { /// <summary> /// Defines the entry point of the application. /// </summary> /// <param name=\"args\">The arguments.</param> private static void Main(string[] args) { // Set up the DI container and make sure to call AddCanisterModules() to load all of the modules that are part of Corset var SeviceProvider = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider(); // This is the data that we want to compress const string Data = \"This is a bit of data that I want to compress\"; // Compress the data using the default compressor var CompressedData = Data.Compress(); Console.WriteLine(CompressedData); // Decompress the data using the default compressor var DecompressedData = CompressedData.Decompress(); Console.WriteLine(DecompressedData); } } } Output CsnILFYAokSFpMwShfw0hZTEkkSFkozEEgVPhfLEvBKFknyF5PzcgqLU4mIAAAAA//8= This is a bit of data that I want to compress"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Corset | Corset API Reference",
+    "keywords": "Corset Corset is a library designed to simplify compression in .Net. By default it supports Deflate and GZip but can be expanded upon to support other types of compression. Basic Usage uses a library called Canister for registering itself in your ServiceCollection: servicecollection.AddCanisterModules(); This line is required prior to using the extension methods for the first time. Once Canister is set up, you can call the extension methods provided: string Data = \"This is a bit of data that I want to compress\"; string CompressedBase64String = Data.Compress(); The Compress extension method works on both strings and byte arrays. It will also allow you to specify which Encoding the string is using. By default it assumes a UTF8 encoding but this can be set as one of the parameters. The result from the Compress function will be either a Base64 string if it was called on a string or a byte array if you called the function on a byte array. In order to Decompress the data, you simply call the Decompress extension method: string CompressedData = \"This is a bit of data that I want to compress\".Compress(); string DecompressedData = CompressedData.Decompress(); Like the Compress extension, this method works on both strings and byte arrays. It allows you to specify which Encoding the string you want back should be in, if called on a string. By default it assumes a UTF8 encoding. The result from the Decompress function is either a string if called on a string, or a byte array if called on a byte array. Adding Compression Types The system loads the compressors at the beginning when Canister is initialized. In order to add your own compression type simply implement the ICompressor interface and pass the assembly it resides in to the Canister initialization line along with the Corset assembly. You may also wish to look at the CompressorBase class as it has some of the code needed already written and just requires you to write a Stream to do the actual compression. Installation The library is available via Nuget with the package name \"Corset\". To install it run the following command in the Package Manager Console: Install-Package Corset Build Process In order to build the library you will require the following as a minimum: Visual Studio 2022 Other than that, just clone the project and you should be able to load the solution and build without too much effort."
+  }
+}
