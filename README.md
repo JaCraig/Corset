@@ -1,16 +1,12 @@
 # Corset
 
-[![Build status](https://ci.appveyor.com/api/projects/status/a44e43tnd4cwo8i6?svg=true)](https://ci.appveyor.com/project/JaCraig/corset)
-
 Corset is a library designed to simplify compression in .Net. By default it supports Deflate and GZip but can be expanded upon to support other types of compression.
 
 ## Basic Usage
 
-The system relies on an IoC wrapper called [Canister](https://github.com/JaCraig/Canister). While Canister has a built in IoC container, it's purpose is to actually wrap your container of choice in a way that simplifies setup and usage for other libraries that don't want to be tied to a specific IoC container. Corset uses it to detect and pull in compression providers. As such you must set up Canister in order to use Corset:
+uses a library called Canister for registering itself in your ServiceCollection:
 
-    Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                    .RegisterCorset()
-                    .Build();
+    servicecollection.AddCanisterModules();
 	
 This line is required prior to using the extension methods for the first time. Once Canister is set up, you can call the extension methods provided:
 
@@ -40,7 +36,6 @@ Install-Package Corset
 
 In order to build the library you will require the following as a minimum:
 
-1. Visual Studio 2015 with Update 3
-2. .Net Core 1.0 SDK
+1. Visual Studio 2022
 
 Other than that, just clone the project and you should be able to load the solution and build without too much effort.
