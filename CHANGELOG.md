@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.2"></a>
+## [4.0.2](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.2) (2023-7-12)
+
+### Bug Fixes
+
+* bump Canister.IoC from 5.1.2 to 5.1.3 ([bf46b10](https://www.github.com/JaCraig/Corset/commit/bf46b109c457c89d75b25933cdb1465bd70ff9ab))
+
+### Other
+
+* Merge pull request #2 from JaCraig/dependabot/nuget/Canister.IoC-5.1.3 ([043efa4](https://www.github.com/JaCraig/Corset/commit/043efa4266a237fc672b753313accd6cd9dab335))
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.1) (2023-7-10)
 
