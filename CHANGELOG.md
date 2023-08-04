@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.4"></a>
+## [4.0.4](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.4) (2023-8-4)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([6f5008e](https://www.github.com/JaCraig/Corset/commit/6f5008e1902ab8305676bce3bb4d4eb060fbe945))
+
+### Other
+
+* Merge pull request #4 from JaCraig/dependabot/github_actions/dependencies-0717129e0a ([951ac93](https://www.github.com/JaCraig/Corset/commit/951ac93fec8ac1f27ef38fb4994211ee376929f9))
+* Merge pull request #5 from JaCraig/dependabot/nuget/dependencies-5bd43afe2e ([c67aa3c](https://www.github.com/JaCraig/Corset/commit/c67aa3cd1e1b2ded359512c3622e27bd2ba0271f))
+* Adding editorconfig ([f6bfc4f](https://www.github.com/JaCraig/Corset/commit/f6bfc4fbe1dd34381f7a2461ac1031668d60c9a5))
+* bump the dependencies group with 2 updates ([821ed90](https://www.github.com/JaCraig/Corset/commit/821ed90c5530379e5a2f416fab1a224ff430e415))
+* dependabot update ([b840eff](https://www.github.com/JaCraig/Corset/commit/b840eff9445075d4cecd6333ff74b8070253bba2))
+
 <a name="4.0.3"></a>
 ## [4.0.3](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.3) (2023-7-13)
 
