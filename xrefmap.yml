@@ -306,6 +306,19 @@ references:
   isSpec: "True"
   fullName: Corset.Enums.CompressorType.GZip
   nameWithType: CompressorType.GZip
+- uid: Corset.Enums.CompressorType.ToString
+  name: ToString()
+  href: api/Corset.Enums.CompressorType.html#Corset_Enums_CompressorType_ToString
+  commentId: M:Corset.Enums.CompressorType.ToString
+  fullName: Corset.Enums.CompressorType.ToString()
+  nameWithType: CompressorType.ToString()
+- uid: Corset.Enums.CompressorType.ToString*
+  name: ToString
+  href: api/Corset.Enums.CompressorType.html#Corset_Enums_CompressorType_ToString_
+  commentId: Overload:Corset.Enums.CompressorType.ToString
+  isSpec: "True"
+  fullName: Corset.Enums.CompressorType.ToString
+  nameWithType: CompressorType.ToString
 - uid: Corset.Enums.CompressorType.op_Explicit(System.String)~Corset.Enums.CompressorType
   name: explicit operator CompressorType(string)
   href: api/Corset.Enums.CompressorType.html#Corset_Enums_CompressorType_op_Explicit_System_String__Corset_Enums_CompressorType
@@ -344,19 +357,6 @@ references:
   fullName.vb: Corset.Enums.CompressorType.CType
   nameWithType: CompressorType.implicit operator
   nameWithType.vb: CompressorType.CType
-- uid: Corset.Enums.CompressorType.ToString
-  name: ToString()
-  href: api/Corset.Enums.CompressorType.html#Corset_Enums_CompressorType_ToString
-  commentId: M:Corset.Enums.CompressorType.ToString
-  fullName: Corset.Enums.CompressorType.ToString()
-  nameWithType: CompressorType.ToString()
-- uid: Corset.Enums.CompressorType.ToString*
-  name: ToString
-  href: api/Corset.Enums.CompressorType.html#Corset_Enums_CompressorType_ToString_
-  commentId: Overload:Corset.Enums.CompressorType.ToString
-  isSpec: "True"
-  fullName: Corset.Enums.CompressorType.ToString
-  nameWithType: CompressorType.ToString
 - uid: Corset.Interfaces
   name: Corset.Interfaces
   href: api/Corset.Interfaces.html

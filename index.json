@@ -39,20 +39,15 @@
     "title": "Namespace Corset.Enums | Corset API Reference",
     "keywords": "Namespace Corset.Enums Classes CompressorType Defines the compressor types in an enum like static class"
   },
-  "api/Corset.html": {
-    "href": "api/Corset.html",
-    "title": "Namespace Corset | Corset API Reference",
-    "keywords": "Namespace Corset Classes Corset Main class used to interact with the compression system"
+  "api/Corset.Interfaces.ICompressor.html": {
+    "href": "api/Corset.Interfaces.ICompressor.html",
+    "title": "Interface ICompressor | Corset API Reference",
+    "keywords": "Interface ICompressor Compressor interface Namespace: Corset.Interfaces Assembly: Corset.dll Syntax public interface ICompressor Properties | Improve this Doc View Source Name Compressor name Declaration string Name { get; } Property Value Type Description string Methods | Improve this Doc View Source Compress(byte[]) Compresses the data Declaration byte[] Compress(byte[] data) Parameters Type Name Description byte[] data Data to compress Returns Type Description byte[] Compressed data | Improve this Doc View Source Decompress(byte[]) Decompresses the data Declaration byte[] Decompress(byte[] data) Parameters Type Name Description byte[] data Data to decompress Returns Type Description byte[] The decompressed data"
   },
   "api/Corset.Interfaces.html": {
     "href": "api/Corset.Interfaces.html",
     "title": "Namespace Corset.Interfaces | Corset API Reference",
     "keywords": "Namespace Corset.Interfaces Interfaces ICompressor Compressor interface"
-  },
-  "api/Corset.Interfaces.ICompressor.html": {
-    "href": "api/Corset.Interfaces.ICompressor.html",
-    "title": "Interface ICompressor | Corset API Reference",
-    "keywords": "Interface ICompressor Compressor interface Namespace: Corset.Interfaces Assembly: Corset.dll Syntax public interface ICompressor Properties | Improve this Doc View Source Name Compressor name Declaration string Name { get; } Property Value Type Description string Methods | Improve this Doc View Source Compress(byte[]) Compresses the data Declaration byte[] Compress(byte[] data) Parameters Type Name Description byte[] data Data to compress Returns Type Description byte[] Compressed data | Improve this Doc View Source Decompress(byte[]) Decompresses the data Declaration byte[] Decompress(byte[] data) Parameters Type Name Description byte[] data Data to decompress Returns Type Description byte[] The decompressed data"
   },
   "api/Corset.Module.CorsetModule.html": {
     "href": "api/Corset.Module.CorsetModule.html",
@@ -64,20 +59,25 @@
     "title": "Namespace Corset.Module | Corset API Reference",
     "keywords": "Namespace Corset.Module Classes CorsetModule Corset's IoC module"
   },
-  "api/index.html": {
-    "href": "api/index.html",
-    "title": "Welcome | Corset API Reference",
-    "keywords": "Welcome Welcome to the API browser."
+  "api/Corset.html": {
+    "href": "api/Corset.html",
+    "title": "Namespace Corset | Corset API Reference",
+    "keywords": "Namespace Corset Classes Corset Main class used to interact with the compression system"
+  },
+  "api/Microsoft.Extensions.DependencyInjection.Registration.html": {
+    "href": "api/Microsoft.Extensions.DependencyInjection.Registration.html",
+    "title": "Class Registration | Corset API Reference",
+    "keywords": "Class Registration Registration extension methods Inheritance object Registration Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Microsoft.Extensions.DependencyInjection Assembly: Corset.dll Syntax public static class Registration Methods | Improve this Doc View Source RegisterCorset(ICanisterConfiguration?) Registers the aspectus library with the bootstrapper. Declaration public static ICanisterConfiguration? RegisterCorset(this ICanisterConfiguration? bootstrapper) Parameters Type Name Description ICanisterConfiguration bootstrapper The bootstrapper. Returns Type Description ICanisterConfiguration The bootstrapper"
   },
   "api/Microsoft.Extensions.DependencyInjection.html": {
     "href": "api/Microsoft.Extensions.DependencyInjection.html",
     "title": "Namespace Microsoft.Extensions.DependencyInjection | Corset API Reference",
     "keywords": "Namespace Microsoft.Extensions.DependencyInjection Classes Registration Registration extension methods"
   },
-  "api/Microsoft.Extensions.DependencyInjection.Registration.html": {
-    "href": "api/Microsoft.Extensions.DependencyInjection.Registration.html",
-    "title": "Class Registration | Corset API Reference",
-    "keywords": "Class Registration Registration extension methods Inheritance object Registration Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Microsoft.Extensions.DependencyInjection Assembly: Corset.dll Syntax public static class Registration Methods | Improve this Doc View Source RegisterCorset(ICanisterConfiguration?) Registers the aspectus library with the bootstrapper. Declaration public static ICanisterConfiguration? RegisterCorset(this ICanisterConfiguration? bootstrapper) Parameters Type Name Description ICanisterConfiguration bootstrapper The bootstrapper. Returns Type Description ICanisterConfiguration The bootstrapper"
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "Welcome | Corset API Reference",
+    "keywords": "Welcome Welcome to the API browser."
   },
   "articles/intro.html": {
     "href": "articles/intro.html",
