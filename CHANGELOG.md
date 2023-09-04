@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.11"></a>
+## [4.0.11](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.11) (2023-9-4)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([fc71976](https://www.github.com/JaCraig/Corset/commit/fc719764a7615af18763b7c4cdcfe870d9368b51))
+
+### Other
+
+* Merge pull request #26 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-27524b3346 ([19ad999](https://www.github.com/JaCraig/Corset/commit/19ad99922feea76e9e83d7022335447024257785))
+* Merge pull request #27 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-4fe17a6144 ([6c23941](https://www.github.com/JaCraig/Corset/commit/6c23941091aa849b0dacf6f560d78df5ebf0774f))
+* Merge pull request #28 from JaCraig/dependabot/github_actions/dependencies-8a9da2b879 ([6d11d73](https://www.github.com/JaCraig/Corset/commit/6d11d737406efd76c6aa63095111e703d498176b))
+* Merge pull request #29 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-a8f09b46f0 ([5297da7](https://www.github.com/JaCraig/Corset/commit/5297da7c0f2965a2614af07109bacc4bc87956ea))
+* Merge pull request #30 from JaCraig/dependabot/nuget/dependencies-31f8d2e38b ([96d508d](https://www.github.com/JaCraig/Corset/commit/96d508d742601b57ddd6a05ed5fb3f4e1c2f7936))
+* bump the dependencies group in /Corset.Tests with 1 update ([75959d0](https://www.github.com/JaCraig/Corset/commit/75959d0ef40303e2c149da27aa19bbb722487ef1))
+* bump the dependencies group in /Corset.Tests with 1 update ([bcf2ffd](https://www.github.com/JaCraig/Corset/commit/bcf2ffd7cc6d3df53f36168db20c2260befa9133))
+* bump the dependencies group in /Corset.Tests with 1 update ([0b2f8ad](https://www.github.com/JaCraig/Corset/commit/0b2f8ad1a2b7c80ff1152427b9f930bf9fc09ef7))
+* bump the dependencies group with 1 update ([b67b835](https://www.github.com/JaCraig/Corset/commit/b67b8355d9e13dc99940277ee5ea07224903604d))
+
 <a name="4.0.10"></a>
 ## [4.0.10](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.10) (2023-8-31)
 
