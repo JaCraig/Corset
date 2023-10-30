@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.16"></a>
+## [4.0.16](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.16) (2023-10-30)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([e0a2b51](https://www.github.com/JaCraig/Corset/commit/e0a2b513ff57f4668e2ee23d732a98e4ed0f5557))
+
+### Other
+
+* Merge pull request #58 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-10614fcf56 ([1d5fa5e](https://www.github.com/JaCraig/Corset/commit/1d5fa5e9eeb5747930fb06fae07e78eb5ce7484f))
+* Merge pull request #59 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-5cf7b2c746 ([0d92bf9](https://www.github.com/JaCraig/Corset/commit/0d92bf986023e7bb89b6c3bc2fb93c7227ac5c11))
+* Merge pull request #60 from JaCraig/dependabot/nuget/dependencies-249395c324 ([333c7d2](https://www.github.com/JaCraig/Corset/commit/333c7d223b0283bbd79feb7b2216c12139792763))
+* bump the dependencies group in /Corset.Tests with 1 update ([1d2f7b4](https://www.github.com/JaCraig/Corset/commit/1d2f7b41904b2f4ed49c6c4a36bc4c4832fb8643))
+* bump the dependencies group in /Corset.Tests with 1 update ([09f07e6](https://www.github.com/JaCraig/Corset/commit/09f07e6d0ebe606363383d97dd3520f938a0721b))
+
 <a name="4.0.15"></a>
 ## [4.0.15](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.15) (2023-10-27)
 
