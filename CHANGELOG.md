@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.17"></a>
+## [4.0.17](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.17) (2023-11-03)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([f6befb0](https://www.github.com/JaCraig/Corset/commit/f6befb0e8ac45dd1c9eb436d80db061117d31a89))
+
+### Other
+
+* Merge pull request #61 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-7f7962f8e8 ([ced62d5](https://www.github.com/JaCraig/Corset/commit/ced62d5d5c8050a8939ee1abb24873bebc934e2f))
+* Merge pull request #62 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-3598e1a3af ([14c916c](https://www.github.com/JaCraig/Corset/commit/14c916c796505a38cfb8d1a622452e97aa086153))
+* Merge pull request #63 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-0e5fbc1329 ([c9df395](https://www.github.com/JaCraig/Corset/commit/c9df3950d9f44d9be3ed1e05daf9c54645dc1f54))
+* Merge pull request #64 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-1731293a0b ([b9606e9](https://www.github.com/JaCraig/Corset/commit/b9606e9b6153bc2069832e0487768d78934a1132))
+* Merge pull request #65 from JaCraig/dependabot/nuget/dependencies-e44d31145b ([f704190](https://www.github.com/JaCraig/Corset/commit/f70419027416ad55c1ed658a66ca8e5d6048480e))
+* bump the dependencies group in /Corset.Tests with 1 update ([053a08c](https://www.github.com/JaCraig/Corset/commit/053a08cc48ea0f95da489e6361a7d1d85cc2dc82))
+* bump the dependencies group in /Corset.Tests with 1 update ([e374e9c](https://www.github.com/JaCraig/Corset/commit/e374e9c41bf6782046e738cc69cc18193b330288))
+* bump the dependencies group in /Corset.Tests with 1 update ([085cff0](https://www.github.com/JaCraig/Corset/commit/085cff0722ce10a8d1ad83435383d02de62b46fe))
+* bump the dependencies group in /Corset.Tests with 2 updates ([97d1ccd](https://www.github.com/JaCraig/Corset/commit/97d1ccd5d6470f4e1fe0ff24a850a743d2abfc73))
+
 <a name="4.0.16"></a>
 ## [4.0.16](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.16) (2023-10-30)
 
