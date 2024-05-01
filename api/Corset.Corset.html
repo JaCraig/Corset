@@ -153,7 +153,7 @@ Class Corset  <a class="header-action link-secondary" title="View source" href="
   <a id="Corset_Corset__ctor_" data-uid="Corset.Corset.#ctor*"></a>
 
   <h3 id="Corset_Corset__ctor_System_Collections_Generic_IEnumerable_Corset_Interfaces_ICompressor__" data-uid="Corset.Corset.#ctor(System.Collections.Generic.IEnumerable{Corset.Interfaces.ICompressor})">
-  Corset(IEnumerable&lt;ICompressor&gt;)
+  Corset(IEnumerable&lt;ICompressor&gt;?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Corset/blob/master/src/Corset/Corset.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -162,7 +162,7 @@ Class Corset  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Corset(IEnumerable&lt;ICompressor&gt; compressors)</code></pre>
+    <pre><code class="lang-csharp hljs">public Corset(IEnumerable&lt;ICompressor&gt;? compressors)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -227,8 +227,8 @@ Class Corset  <a class="header-action link-secondary" title="View source" href="
   <a id="Corset_Corset_Compress_" data-uid="Corset.Corset.Compress*"></a>
 
   <h3 id="Corset_Corset_Compress_System_Byte___Corset_Enums_CompressorType_" data-uid="Corset.Corset.Compress(System.Byte[],Corset.Enums.CompressorType)">
-  Compress(byte[], CompressorType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Corset/blob/master/src/Corset/Corset.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  Compress(byte[]?, CompressorType?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Corset/blob/master/src/Corset/Corset.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compresses the data</p>
@@ -236,7 +236,7 @@ Class Corset  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[]? Compress(byte[] data, CompressorType compressor)</code></pre>
+    <pre><code class="lang-csharp hljs">public byte[]? Compress(byte[]? data, CompressorType? compressor)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -269,8 +269,8 @@ Class Corset  <a class="header-action link-secondary" title="View source" href="
   <a id="Corset_Corset_Decompress_" data-uid="Corset.Corset.Decompress*"></a>
 
   <h3 id="Corset_Corset_Decompress_System_Byte___Corset_Enums_CompressorType_" data-uid="Corset.Corset.Decompress(System.Byte[],Corset.Enums.CompressorType)">
-  Decompress(byte[], CompressorType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Corset/blob/master/src/Corset/Corset.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  Decompress(byte[]?, CompressorType?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Corset/blob/master/src/Corset/Corset.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Decompresses the data</p>
@@ -278,7 +278,7 @@ Class Corset  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[]? Decompress(byte[] data, CompressorType compressor)</code></pre>
+    <pre><code class="lang-csharp hljs">public byte[]? Decompress(byte[]? data, CompressorType? compressor)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -312,7 +312,7 @@ Class Corset  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Corset_Corset_ToString" data-uid="Corset.Corset.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Corset/blob/master/src/Corset/Corset.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Corset/blob/master/src/Corset/Corset.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>String info for the manager</p>

@@ -103,13 +103,13 @@ references:
   fullName: Corset.Corset
   nameWithType: Corset
 - uid: Corset.Corset.#ctor(System.Collections.Generic.IEnumerable{Corset.Interfaces.ICompressor})
-  name: Corset(IEnumerable<ICompressor>)
+  name: Corset(IEnumerable<ICompressor>?)
   href: api/Corset.Corset.html#Corset_Corset__ctor_System_Collections_Generic_IEnumerable_Corset_Interfaces_ICompressor__
   commentId: M:Corset.Corset.#ctor(System.Collections.Generic.IEnumerable{Corset.Interfaces.ICompressor})
   name.vb: New(IEnumerable(Of ICompressor))
-  fullName: Corset.Corset.Corset(System.Collections.Generic.IEnumerable<Corset.Interfaces.ICompressor>)
+  fullName: Corset.Corset.Corset(System.Collections.Generic.IEnumerable<Corset.Interfaces.ICompressor>?)
   fullName.vb: Corset.Corset.New(System.Collections.Generic.IEnumerable(Of Corset.Interfaces.ICompressor))
-  nameWithType: Corset.Corset(IEnumerable<ICompressor>)
+  nameWithType: Corset.Corset(IEnumerable<ICompressor>?)
   nameWithType.vb: Corset.New(IEnumerable(Of ICompressor))
 - uid: Corset.Corset.#ctor*
   name: Corset
@@ -122,13 +122,13 @@ references:
   nameWithType: Corset.Corset
   nameWithType.vb: Corset.New
 - uid: Corset.Corset.Compress(System.Byte[],Corset.Enums.CompressorType)
-  name: Compress(byte[], CompressorType)
+  name: Compress(byte[]?, CompressorType?)
   href: api/Corset.Corset.html#Corset_Corset_Compress_System_Byte___Corset_Enums_CompressorType_
   commentId: M:Corset.Corset.Compress(System.Byte[],Corset.Enums.CompressorType)
   name.vb: Compress(Byte(), CompressorType)
-  fullName: Corset.Corset.Compress(byte[], Corset.Enums.CompressorType)
+  fullName: Corset.Corset.Compress(byte[]?, Corset.Enums.CompressorType?)
   fullName.vb: Corset.Corset.Compress(Byte(), Corset.Enums.CompressorType)
-  nameWithType: Corset.Compress(byte[], CompressorType)
+  nameWithType: Corset.Compress(byte[]?, CompressorType?)
   nameWithType.vb: Corset.Compress(Byte(), CompressorType)
 - uid: Corset.Corset.Compress*
   name: Compress
@@ -151,13 +151,13 @@ references:
   fullName: Corset.Corset.Compressors
   nameWithType: Corset.Compressors
 - uid: Corset.Corset.Decompress(System.Byte[],Corset.Enums.CompressorType)
-  name: Decompress(byte[], CompressorType)
+  name: Decompress(byte[]?, CompressorType?)
   href: api/Corset.Corset.html#Corset_Corset_Decompress_System_Byte___Corset_Enums_CompressorType_
   commentId: M:Corset.Corset.Decompress(System.Byte[],Corset.Enums.CompressorType)
   name.vb: Decompress(Byte(), CompressorType)
-  fullName: Corset.Corset.Decompress(byte[], Corset.Enums.CompressorType)
+  fullName: Corset.Corset.Decompress(byte[]?, Corset.Enums.CompressorType?)
   fullName.vb: Corset.Corset.Decompress(Byte(), Corset.Enums.CompressorType)
-  nameWithType: Corset.Decompress(byte[], CompressorType)
+  nameWithType: Corset.Decompress(byte[]?, CompressorType?)
   nameWithType.vb: Corset.Decompress(Byte(), CompressorType)
 - uid: Corset.Corset.Decompress*
   name: Decompress
@@ -455,31 +455,53 @@ references:
   isSpec: "True"
   fullName: Corset.Module.CorsetModule.Order
   nameWithType: CorsetModule.Order
-- uid: Microsoft.Extensions.DependencyInjection
-  name: Microsoft.Extensions.DependencyInjection
-  href: api/Microsoft.Extensions.DependencyInjection.html
-  commentId: N:Microsoft.Extensions.DependencyInjection
-  fullName: Microsoft.Extensions.DependencyInjection
-  nameWithType: Microsoft.Extensions.DependencyInjection
-- uid: Microsoft.Extensions.DependencyInjection.Registration
-  name: Registration
-  href: api/Microsoft.Extensions.DependencyInjection.Registration.html
-  commentId: T:Microsoft.Extensions.DependencyInjection.Registration
-  fullName: Microsoft.Extensions.DependencyInjection.Registration
-  nameWithType: Registration
-- uid: Microsoft.Extensions.DependencyInjection.Registration.RegisterCorset(Canister.Interfaces.ICanisterConfiguration)
+- uid: Corset.Registration
+  name: Corset.Registration
+  href: api/Corset.Registration.html
+  commentId: N:Corset.Registration
+  fullName: Corset.Registration
+  nameWithType: Corset.Registration
+- uid: Corset.Registration.CorsetRegistration
+  name: CorsetRegistration
+  href: api/Corset.Registration.CorsetRegistration.html
+  commentId: T:Corset.Registration.CorsetRegistration
+  fullName: Corset.Registration.CorsetRegistration
+  nameWithType: CorsetRegistration
+- uid: Corset.Registration.CorsetRegistration.RegisterCorset(Canister.Interfaces.ICanisterConfiguration)
   name: RegisterCorset(ICanisterConfiguration?)
-  href: api/Microsoft.Extensions.DependencyInjection.Registration.html#Microsoft_Extensions_DependencyInjection_Registration_RegisterCorset_Canister_Interfaces_ICanisterConfiguration_
-  commentId: M:Microsoft.Extensions.DependencyInjection.Registration.RegisterCorset(Canister.Interfaces.ICanisterConfiguration)
+  href: api/Corset.Registration.CorsetRegistration.html#Corset_Registration_CorsetRegistration_RegisterCorset_Canister_Interfaces_ICanisterConfiguration_
+  commentId: M:Corset.Registration.CorsetRegistration.RegisterCorset(Canister.Interfaces.ICanisterConfiguration)
   name.vb: RegisterCorset(ICanisterConfiguration)
-  fullName: Microsoft.Extensions.DependencyInjection.Registration.RegisterCorset(Canister.Interfaces.ICanisterConfiguration?)
-  fullName.vb: Microsoft.Extensions.DependencyInjection.Registration.RegisterCorset(Canister.Interfaces.ICanisterConfiguration)
-  nameWithType: Registration.RegisterCorset(ICanisterConfiguration?)
-  nameWithType.vb: Registration.RegisterCorset(ICanisterConfiguration)
-- uid: Microsoft.Extensions.DependencyInjection.Registration.RegisterCorset*
+  fullName: Corset.Registration.CorsetRegistration.RegisterCorset(Canister.Interfaces.ICanisterConfiguration?)
+  fullName.vb: Corset.Registration.CorsetRegistration.RegisterCorset(Canister.Interfaces.ICanisterConfiguration)
+  nameWithType: CorsetRegistration.RegisterCorset(ICanisterConfiguration?)
+  nameWithType.vb: CorsetRegistration.RegisterCorset(ICanisterConfiguration)
+- uid: Corset.Registration.CorsetRegistration.RegisterCorset*
   name: RegisterCorset
-  href: api/Microsoft.Extensions.DependencyInjection.Registration.html#Microsoft_Extensions_DependencyInjection_Registration_RegisterCorset_
-  commentId: Overload:Microsoft.Extensions.DependencyInjection.Registration.RegisterCorset
+  href: api/Corset.Registration.CorsetRegistration.html#Corset_Registration_CorsetRegistration_RegisterCorset_
+  commentId: Overload:Corset.Registration.CorsetRegistration.RegisterCorset
   isSpec: "True"
-  fullName: Microsoft.Extensions.DependencyInjection.Registration.RegisterCorset
-  nameWithType: Registration.RegisterCorset
+  fullName: Corset.Registration.CorsetRegistration.RegisterCorset
+  nameWithType: CorsetRegistration.RegisterCorset
+- uid: Corset.Registration.CorsetServiceCollectionExtensions
+  name: CorsetServiceCollectionExtensions
+  href: api/Corset.Registration.CorsetServiceCollectionExtensions.html
+  commentId: T:Corset.Registration.CorsetServiceCollectionExtensions
+  fullName: Corset.Registration.CorsetServiceCollectionExtensions
+  nameWithType: CorsetServiceCollectionExtensions
+- uid: Corset.Registration.CorsetServiceCollectionExtensions.AddCorset(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddCorset(IServiceCollection?)
+  href: api/Corset.Registration.CorsetServiceCollectionExtensions.html#Corset_Registration_CorsetServiceCollectionExtensions_AddCorset_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Corset.Registration.CorsetServiceCollectionExtensions.AddCorset(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddCorset(IServiceCollection)
+  fullName: Corset.Registration.CorsetServiceCollectionExtensions.AddCorset(Microsoft.Extensions.DependencyInjection.IServiceCollection?)
+  fullName.vb: Corset.Registration.CorsetServiceCollectionExtensions.AddCorset(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: CorsetServiceCollectionExtensions.AddCorset(IServiceCollection?)
+  nameWithType.vb: CorsetServiceCollectionExtensions.AddCorset(IServiceCollection)
+- uid: Corset.Registration.CorsetServiceCollectionExtensions.AddCorset*
+  name: AddCorset
+  href: api/Corset.Registration.CorsetServiceCollectionExtensions.html#Corset_Registration_CorsetServiceCollectionExtensions_AddCorset_
+  commentId: Overload:Corset.Registration.CorsetServiceCollectionExtensions.AddCorset
+  isSpec: "True"
+  fullName: Corset.Registration.CorsetServiceCollectionExtensions.AddCorset
+  nameWithType: CorsetServiceCollectionExtensions.AddCorset

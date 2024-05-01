@@ -132,30 +132,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Corset.Registration.CorsetRegistration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Corset.Registration.CorsetRegistration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Corset.Registration.CorsetServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Corset.Registration.CorsetServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Corset.Registration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Corset.Registration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Corset.yml",
       "output": {
         ".html": {
           "relative_path": "api/Corset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.Registration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.Registration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
         }
       },
       "version": ""

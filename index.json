@@ -12,7 +12,7 @@
   "api/Corset.Corset.html": {
     "href": "api/Corset.Corset.html",
     "title": "Class Corset | Corset API Reference",
-    "keywords": "Class Corset Namespace Corset Assembly Corset.dll Main class used to interact with the compression system public class Corset Inheritance object Corset Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors Corset(IEnumerable<ICompressor>) Initializes a new instance of the Corset class. public Corset(IEnumerable<ICompressor> compressors) Parameters compressors IEnumerable<ICompressor> The compressors. Properties Compressors Gets or sets the compressors. public IDictionary<string, ICompressor> Compressors { get; } Property Value IDictionary<string, ICompressor> The compressors. Methods Compress(byte[], CompressorType) Compresses the data public byte[]? Compress(byte[] data, CompressorType compressor) Parameters data byte[] The data. compressor CompressorType The compressor. Returns byte[] The compressed data Decompress(byte[], CompressorType) Decompresses the data public byte[]? Decompress(byte[] data, CompressorType compressor) Parameters data byte[] Data to decompress compressor CompressorType Compressor name Returns byte[] The decompressed data ToString() String info for the manager public override string ToString() Returns string The string info that the manager contains"
+    "keywords": "Class Corset Namespace Corset Assembly Corset.dll Main class used to interact with the compression system public class Corset Inheritance object Corset Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors Corset(IEnumerable<ICompressor>?) Initializes a new instance of the Corset class. public Corset(IEnumerable<ICompressor>? compressors) Parameters compressors IEnumerable<ICompressor> The compressors. Properties Compressors Gets or sets the compressors. public IDictionary<string, ICompressor> Compressors { get; } Property Value IDictionary<string, ICompressor> The compressors. Methods Compress(byte[]?, CompressorType?) Compresses the data public byte[]? Compress(byte[]? data, CompressorType? compressor) Parameters data byte[] The data. compressor CompressorType The compressor. Returns byte[] The compressed data Decompress(byte[]?, CompressorType?) Decompresses the data public byte[]? Decompress(byte[]? data, CompressorType? compressor) Parameters data byte[] Data to decompress compressor CompressorType Compressor name Returns byte[] The decompressed data ToString() String info for the manager public override string ToString() Returns string The string info that the manager contains"
   },
   "api/Corset.Default.DeflateCompressor.html": {
     "href": "api/Corset.Default.DeflateCompressor.html",
@@ -59,20 +59,25 @@
     "title": "Namespace Corset.Module | Corset API Reference",
     "keywords": "Namespace Corset.Module Classes CorsetModule Corset's IoC module"
   },
+  "api/Corset.Registration.CorsetRegistration.html": {
+    "href": "api/Corset.Registration.CorsetRegistration.html",
+    "title": "Class CorsetRegistration | Corset API Reference",
+    "keywords": "Class CorsetRegistration Namespace Corset.Registration Assembly Corset.dll Registration extension methods public static class CorsetRegistration Inheritance object CorsetRegistration Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods RegisterCorset(ICanisterConfiguration?) Registers the aspectus library with the bootstrapper. public static ICanisterConfiguration? RegisterCorset(this ICanisterConfiguration? bootstrapper) Parameters bootstrapper ICanisterConfiguration The bootstrapper. Returns ICanisterConfiguration The bootstrapper"
+  },
+  "api/Corset.Registration.CorsetServiceCollectionExtensions.html": {
+    "href": "api/Corset.Registration.CorsetServiceCollectionExtensions.html",
+    "title": "Class CorsetServiceCollectionExtensions | Corset API Reference",
+    "keywords": "Class CorsetServiceCollectionExtensions Namespace Corset.Registration Assembly Corset.dll Extension methods for configuring Corset in the IServiceCollection. public static class CorsetServiceCollectionExtensions Inheritance object CorsetServiceCollectionExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddCorset(IServiceCollection?) Adds Corset services to the specified IServiceCollection. public static IServiceCollection? AddCorset(this IServiceCollection? services) Parameters services IServiceCollection The IServiceCollection to add the services to. Returns IServiceCollection The modified IServiceCollection instance."
+  },
+  "api/Corset.Registration.html": {
+    "href": "api/Corset.Registration.html",
+    "title": "Namespace Corset.Registration | Corset API Reference",
+    "keywords": "Namespace Corset.Registration Classes CorsetRegistration Registration extension methods CorsetServiceCollectionExtensions Extension methods for configuring Corset in the IServiceCollection."
+  },
   "api/Corset.html": {
     "href": "api/Corset.html",
     "title": "Namespace Corset | Corset API Reference",
     "keywords": "Namespace Corset Classes Corset Main class used to interact with the compression system"
-  },
-  "api/Microsoft.Extensions.DependencyInjection.Registration.html": {
-    "href": "api/Microsoft.Extensions.DependencyInjection.Registration.html",
-    "title": "Class Registration | Corset API Reference",
-    "keywords": "Class Registration Namespace Microsoft.Extensions.DependencyInjection Assembly Corset.dll Registration extension methods public static class Registration Inheritance object Registration Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods RegisterCorset(ICanisterConfiguration?) Registers the aspectus library with the bootstrapper. public static ICanisterConfiguration? RegisterCorset(this ICanisterConfiguration? bootstrapper) Parameters bootstrapper ICanisterConfiguration The bootstrapper. Returns ICanisterConfiguration The bootstrapper"
-  },
-  "api/Microsoft.Extensions.DependencyInjection.html": {
-    "href": "api/Microsoft.Extensions.DependencyInjection.html",
-    "title": "Namespace Microsoft.Extensions.DependencyInjection | Corset API Reference",
-    "keywords": "Namespace Microsoft.Extensions.DependencyInjection Classes Registration Registration extension methods"
   },
   "api/index.html": {
     "href": "api/index.html",
