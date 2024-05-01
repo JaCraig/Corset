@@ -16,18 +16,18 @@ limitations under the License.
 
 using Canister.Interfaces;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace Corset.Registration
 {
     /// <summary>
     /// Registration extension methods
     /// </summary>
-    public static class Registration
+    public static class CorsetRegistration
     {
         /// <summary>
         /// Registers the aspectus library with the bootstrapper.
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper</returns>
-        public static ICanisterConfiguration? RegisterCorset(this ICanisterConfiguration? bootstrapper) => bootstrapper?.AddAssembly(typeof(Corset.Corset).Assembly);
+        public static ICanisterConfiguration? RegisterCorset(this ICanisterConfiguration? bootstrapper) => bootstrapper?.AddAssembly(typeof(CorsetRegistration).Assembly);
     }
 }

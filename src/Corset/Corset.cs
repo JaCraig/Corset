@@ -31,7 +31,7 @@ namespace Corset
         /// Initializes a new instance of the <see cref="Corset"/> class.
         /// </summary>
         /// <param name="compressors">The compressors.</param>
-        public Corset(IEnumerable<ICompressor> compressors)
+        public Corset(IEnumerable<ICompressor>? compressors)
         {
             compressors ??= new List<ICompressor>();
             Compressors = new Dictionary<string, ICompressor>();
@@ -48,12 +48,22 @@ namespace Corset
         public IDictionary<string, ICompressor> Compressors { get; }
 
         /// <summary>
+        /// Tostring lock object
+        /// </summary>
+        private readonly object _ToStringValueLock = new();
+
+        /// <summary>
+        /// Tostring value
+        /// </summary>
+        private string _ToStringValue = "";
+
+        /// <summary>
         /// Compresses the data
         /// </summary>
         /// <param name="data">The data.</param>
         /// <param name="compressor">The compressor.</param>
         /// <returns>The compressed data</returns>
-        public byte[]? Compress(byte[] data, CompressorType compressor)
+        public byte[]? Compress(byte[]? data, CompressorType? compressor)
         {
             if (data is null)
                 return data;
@@ -68,7 +78,7 @@ namespace Corset
         /// <param name="data">Data to decompress</param>
         /// <param name="compressor">Compressor name</param>
         /// <returns>The decompressed data</returns>
-        public byte[]? Decompress(byte[] data, CompressorType compressor)
+        public byte[]? Decompress(byte[]? data, CompressorType? compressor)
         {
             if (data is null)
                 return data;
@@ -83,15 +93,24 @@ namespace Corset
         /// <returns>The string info that the manager contains</returns>
         public override string ToString()
         {
-            var Builder = new StringBuilder();
-            _ = Builder.Append("Compressors: ");
-            var Separator = "";
-            foreach (var Key in Compressors.Keys.OrderBy(x => x))
+            if (!string.IsNullOrEmpty(_ToStringValue))
+                return _ToStringValue;
+            lock (_ToStringValueLock)
             {
-                _ = Builder.AppendFormat("{0}{1}", Separator, Key);
-                Separator = ",";
+                if (!string.IsNullOrEmpty(_ToStringValue))
+                    return _ToStringValue;
+                var Builder = new StringBuilder();
+                _ = Builder.Append("Compressors: ");
+                var Separator = "";
+                foreach (var Key in Compressors.Keys.OrderBy(x => x))
+                {
+                    _ = Builder.AppendFormat("{0}{1}", Separator, Key);
+                    Separator = ",";
+                }
+                _ToStringValue = Builder.ToString();
             }
-            return Builder.ToString();
+
+            return _ToStringValue;
         }
     }
 }

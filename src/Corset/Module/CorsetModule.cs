@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
-using Corset.Interfaces;
+using Corset.Registration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Corset.Module
@@ -35,10 +35,6 @@ namespace Corset.Module
         /// Loads the module using the bootstrapper
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
-        public void Load(IServiceCollection? bootstrapper)
-        {
-            bootstrapper?.AddAllTransient<ICompressor>()
-                ?.AddSingleton<Corset>();
-        }
+        public void Load(IServiceCollection? bootstrapper) => bootstrapper?.AddCorset();
     }
 }
