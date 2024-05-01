@@ -1,6 +1,6 @@
 # Corset
 
-[![.NET Publish](https://github.com/JaCraig/Corset/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/JaCraig/Corset/actions/workflows/dotnet-publish.yml)
+[![.NET Publish](https://github.com/JaCraig/Corset/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/JaCraig/Corset/actions/workflows/dotnet-publish.yml) [![Coverage Status](https://coveralls.io/repos/github/JaCraig/Corset/badge.svg?branch=master)](https://coveralls.io/github/JaCraig/Corset?branch=master)
 
 Corset is a library designed to simplify compression in .Net. By default it supports Deflate and GZip but can be expanded upon to support other types of compression.
 

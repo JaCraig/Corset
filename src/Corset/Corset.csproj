@@ -4,7 +4,7 @@
     <Description>Corset is a library designed to simplify compression in .Net.</Description>
     <AssemblyTitle>Corset</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net6.0</TargetFrameworks>
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Corset</AssemblyName>
     <PackageId>Corset</PackageId>
@@ -48,7 +48,7 @@
   <ItemGroup>
     <PackageReference Include="Canister.IoC" Version="5.3.7" />
 	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.4">
+	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>

@@ -1,36 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Tests for Corset</Description>
-    <AssemblyTitle>Corset.Tests</AssemblyTitle>
-    <Authors>James Craig</Authors>
-	  <TargetFrameworks>net6.0</TargetFrameworks>
-    <DebugType>portable</DebugType>
-    <AssemblyName>Corset.Tests</AssemblyName>
-    <PackageId>Corset.Tests</PackageId>
-    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-    <PackageTags>Compression;Deflate;GZip</PackageTags>
-    <PackageProjectUrl>https://github.com/JaCraig/Corset</PackageProjectUrl>
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
-    <RuntimeIdentifiers>win7-x64;osx.10.10-x64;ubuntu.14.04-x64</RuntimeIdentifiers>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-	  <Nullable>enable</Nullable>
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Corset\Corset.csproj" />
+    <ProjectReference Include="..\src\Corset\Corset.csproj" /> 
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mecha.xUnit" Version="2.1.57" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.8">
+    <PackageReference Include="coverlet.msbuild" Version="6.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="xunit" Version="2.7.1" />
+    <PackageReference Include="Mecha.xUnit" Version="2.1.58" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="xunit" Version="2.8.0" />
   </ItemGroup>
 
   <ItemGroup>
