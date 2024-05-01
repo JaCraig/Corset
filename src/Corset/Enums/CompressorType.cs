@@ -25,7 +25,7 @@ namespace Corset.Enums
         /// Initializes a new instance of the <see cref="CompressorType"/> class.
         /// </summary>
         /// <param name="name">The name.</param>
-        protected CompressorType(string name)
+        protected CompressorType(string? name)
         {
             Name = name;
         }
@@ -34,44 +34,38 @@ namespace Corset.Enums
         /// Gets the deflate compressor type.
         /// </summary>
         /// <value>The deflate compressor type.</value>
-        public static CompressorType Deflate => new CompressorType("Deflate");
+        public static CompressorType Deflate => new("Deflate");
 
         /// <summary>
         /// Gets the GZip compressor type.
         /// </summary>
         /// <value>The GZip compressor type.</value>
-        public static CompressorType GZip => new CompressorType("GZip");
+        public static CompressorType GZip => new("GZip");
 
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
         /// <value>The name.</value>
-        private string Name { get; }
+        private string? Name { get; }
 
         /// <summary>
         /// Performs an explicit conversion from <see cref="string"/> to <see cref="CompressorType"/>.
         /// </summary>
         /// <param name="compressorType">Type of the compressor.</param>
         /// <returns>The result of the conversion.</returns>
-        public static explicit operator CompressorType(string compressorType)
-        {
-            return new CompressorType(compressorType);
-        }
+        public static explicit operator CompressorType(string? compressorType) => new(compressorType);
 
         /// <summary>
         /// Performs an explicit conversion from <see cref="CompressorType"/> to <see cref="string"/>.
         /// </summary>
         /// <param name="compressorType">Type of the compressor.</param>
         /// <returns>The result of the conversion.</returns>
-        public static implicit operator string(CompressorType compressorType)
-        {
-            return compressorType.ToString();
-        }
+        public static implicit operator string(CompressorType compressorType) => compressorType.ToString();
 
         /// <summary>
-        /// Returns a <see cref="System.String"/> that represents this instance.
+        /// Returns a <see cref="string"/> that represents this instance.
         /// </summary>
-        /// <returns>A <see cref="System.String"/> that represents this instance.</returns>
-        public override string ToString() => Name;
+        /// <returns>A <see cref="string"/> that represents this instance.</returns>
+        public override string ToString() => Name ?? "";
     }
 }

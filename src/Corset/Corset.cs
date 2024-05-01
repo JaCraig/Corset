@@ -35,7 +35,7 @@ namespace Corset
         {
             compressors ??= new List<ICompressor>();
             Compressors = new Dictionary<string, ICompressor>();
-            foreach (var Compressor in compressors)
+            foreach (ICompressor Compressor in compressors)
             {
                 Compressors.Add(Compressor.Name, Compressor);
             }
@@ -84,11 +84,11 @@ namespace Corset
         public override string ToString()
         {
             var Builder = new StringBuilder();
-            Builder.Append("Compressors: ");
+            _ = Builder.Append("Compressors: ");
             var Separator = "";
-            foreach (var key in Compressors.Keys.OrderBy(x => x))
+            foreach (var Key in Compressors.Keys.OrderBy(x => x))
             {
-                Builder.AppendFormat("{0}{1}", Separator, key);
+                _ = Builder.AppendFormat("{0}{1}", Separator, Key);
                 Separator = ",";
             }
             return Builder.ToString();
