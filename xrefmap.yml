@@ -262,13 +262,13 @@ references:
   fullName: Corset.Enums.CompressorType
   nameWithType: CompressorType
 - uid: Corset.Enums.CompressorType.#ctor(System.String)
-  name: CompressorType(string)
+  name: CompressorType(string?)
   href: api/Corset.Enums.CompressorType.html#Corset_Enums_CompressorType__ctor_System_String_
   commentId: M:Corset.Enums.CompressorType.#ctor(System.String)
   name.vb: New(String)
-  fullName: Corset.Enums.CompressorType.CompressorType(string)
+  fullName: Corset.Enums.CompressorType.CompressorType(string?)
   fullName.vb: Corset.Enums.CompressorType.New(String)
-  nameWithType: CompressorType.CompressorType(string)
+  nameWithType: CompressorType.CompressorType(string?)
   nameWithType.vb: CompressorType.New(String)
 - uid: Corset.Enums.CompressorType.#ctor*
   name: CompressorType
@@ -320,13 +320,13 @@ references:
   fullName: Corset.Enums.CompressorType.ToString
   nameWithType: CompressorType.ToString
 - uid: Corset.Enums.CompressorType.op_Explicit(System.String)~Corset.Enums.CompressorType
-  name: explicit operator CompressorType(string)
+  name: explicit operator CompressorType(string?)
   href: api/Corset.Enums.CompressorType.html#Corset_Enums_CompressorType_op_Explicit_System_String__Corset_Enums_CompressorType
   commentId: M:Corset.Enums.CompressorType.op_Explicit(System.String)~Corset.Enums.CompressorType
   name.vb: CType(String)
-  fullName: Corset.Enums.CompressorType.explicit operator Corset.Enums.CompressorType(string)
+  fullName: Corset.Enums.CompressorType.explicit operator Corset.Enums.CompressorType(string?)
   fullName.vb: Corset.Enums.CompressorType.CType(String)
-  nameWithType: CompressorType.explicit operator CompressorType(string)
+  nameWithType: CompressorType.explicit operator CompressorType(string?)
   nameWithType.vb: CompressorType.CType(String)
 - uid: Corset.Enums.CompressorType.op_Explicit*
   name: explicit operator
