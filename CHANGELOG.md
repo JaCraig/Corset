@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.36"></a>
+## [4.0.36](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.36) (2024-05-01)
+
+### Bug Fixes
+
+* Adding additional test coverage ([6ea3124](https://www.github.com/JaCraig/Corset/commit/6ea3124926ae22d47fa5fb10583f1b772d6497c8))
+
 <a name="4.0.35"></a>
 ## [4.0.35](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.35) (2024-05-01)
 
