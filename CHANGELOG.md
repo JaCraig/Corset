@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.43"></a>
+## [4.0.43](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.43) (2024-08-21)
+
+### Bug Fixes
+
+* Fixing build and updating packages ([85aed80](https://www.github.com/JaCraig/Corset/commit/85aed805f407e229138e75c1ecdf07e9d60df6c6))
+
+### Other
+
+* Merge pull request #215 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-54ce44ee3e ([1333601](https://www.github.com/JaCraig/Corset/commit/1333601e8e2d870280fc769cc2970f1792c92f33))
+* Merge pull request #216 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-1861451e44 ([8acbfdb](https://www.github.com/JaCraig/Corset/commit/8acbfdb7e03325f164372563cd158d280e9b5e0c))
+* Merge pull request #217 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-7519b5a5de ([9036fc7](https://www.github.com/JaCraig/Corset/commit/9036fc70419e1c4da78d14d3b2f0df8811eafba6))
+* Merge pull request #218 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-be36b3769a ([0e316d0](https://www.github.com/JaCraig/Corset/commit/0e316d0b5eb8a9d8e5a182dbe8c3ac3782f15d9e))
+* Merge pull request #219 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-0abfb65c46 ([57374c8](https://www.github.com/JaCraig/Corset/commit/57374c84fec1ce44252ae3c1ff1a66f79bb9be17))
+* Merge pull request #220 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-762b859dbf ([d6fcde6](https://www.github.com/JaCraig/Corset/commit/d6fcde6f1e2d9bd20f7112344f84970aea9870e5))
+* Merge pull request #221 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-5251f5199c ([8573b35](https://www.github.com/JaCraig/Corset/commit/8573b352e530fecd41f468499dcc9a5444e0e1d9))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([89b82da](https://www.github.com/JaCraig/Corset/commit/89b82dae0054af3ab23b3889f210a7674046a9d3))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([e0db87c](https://www.github.com/JaCraig/Corset/commit/e0db87cb9a71b352afb43c65d9f25c34a4ce0d3d))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([1aae7d6](https://www.github.com/JaCraig/Corset/commit/1aae7d6488eb9b5a957a11f7f0df606deab8f38d))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([4af5f8d](https://www.github.com/JaCraig/Corset/commit/4af5f8d7b5aebf3ab19028053fab40c55ab8f06f))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([6724873](https://www.github.com/JaCraig/Corset/commit/672487343cd9f28572aec2d73558f8ecd13a98c7))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([dc9e454](https://www.github.com/JaCraig/Corset/commit/dc9e454384a77e99ac7824be762388465b96a82d))
+* bump the dependencies group in /Corset.Tests with 2 updates ([2c14264](https://www.github.com/JaCraig/Corset/commit/2c1426428fa1460426d524661c0459f0c9fe8a29))
+
 <a name="4.0.42"></a>
 ## [4.0.42](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.42) (2024-08-01)
 
