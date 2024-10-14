@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.46"></a>
+## [4.0.46](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.46) (2024-10-14)
+
+### Bug Fixes
+
+* bump Canister.IoC from 5.3.14 to 5.3.15 in the dependencies group ([318a280](https://www.github.com/JaCraig/Corset/commit/318a280f4ca991671b2c2b6d045c035fe4602f77))
+
+### Other
+
+* Merge pull request #241 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-ba86b341d4 ([ebcb294](https://www.github.com/JaCraig/Corset/commit/ebcb294d641e6dfd2416838fc50f1ce25caf03f5))
+* Merge pull request #242 from JaCraig/dependabot/github_actions/dependencies-5d0541337a ([909acbc](https://www.github.com/JaCraig/Corset/commit/909acbc8852a6876b2b1d2568b384ba1d3bf62e3))
+* Merge pull request #243 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-006c3a6508 ([a28128a](https://www.github.com/JaCraig/Corset/commit/a28128a5c25cf711c2368bce8d73de3d3e38c334))
+* Merge pull request #244 from JaCraig/dependabot/nuget/dependencies-cadb4fe95d ([a0c0489](https://www.github.com/JaCraig/Corset/commit/a0c04897d5ff39b4c9f67256160ddc797b2386a3))
+* bump coverallsapp/github-action in the dependencies group ([8e7cd1f](https://www.github.com/JaCraig/Corset/commit/8e7cd1f9d4557644ad120971ac03b4a8e74bea56))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([b8b4ca3](https://www.github.com/JaCraig/Corset/commit/b8b4ca318c822cbf9d8baf81525e70670746f312))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([858005a](https://www.github.com/JaCraig/Corset/commit/858005a40929339470cb85756d2c58b68a8e38a9))
+
 <a name="4.0.45"></a>
 ## [4.0.45](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.45) (2024-10-09)
 
