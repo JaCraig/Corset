@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.47"></a>
+## [4.0.47](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.47) (2024-10-29)
+
+### Bug Fixes
+
+* bump versionize from 1.27.0 to 2.0.0 in the dependencies group ([05d9087](https://www.github.com/JaCraig/Corset/commit/05d90873f81239f9326e0289c0303d7288ba078e))
+* bump versionize from 2.0.0 to 2.1.0 in the dependencies group ([5b4a791](https://www.github.com/JaCraig/Corset/commit/5b4a79110dffe4e92445f6f15e86e8e6ff4fe719))
+
+### Other
+
+* Merge pull request #245 from JaCraig/dependabot/github_actions/dependencies-ffdf47fbe7 ([663beb5](https://www.github.com/JaCraig/Corset/commit/663beb525df666116dbdc3b7b047c9c10e46e28b))
+* Merge pull request #246 from JaCraig/dependabot/nuget/dependencies-9c36df7c76 ([8fe733f](https://www.github.com/JaCraig/Corset/commit/8fe733f18cd78b7fbbf734b4f7b56733cb63050a))
+* Merge pull request #247 from JaCraig/dependabot/github_actions/dependencies-941c69736f ([0f18891](https://www.github.com/JaCraig/Corset/commit/0f1889119b35a96e5f7c60eda53f8bcb9bb0b467))
+* Merge pull request #248 from JaCraig/dependabot/nuget/dependencies-3894128c1d ([bb1f7ba](https://www.github.com/JaCraig/Corset/commit/bb1f7ba14c48c3bc89a2a11242e50290b794597a))
+* Merge pull request #249 from JaCraig/dependabot/github_actions/dependencies-534fe38b4c ([2b0fbf1](https://www.github.com/JaCraig/Corset/commit/2b0fbf1f5be1734a75c622545483788528af74df))
+* bump coverallsapp/github-action in the dependencies group ([899b48f](https://www.github.com/JaCraig/Corset/commit/899b48f6c5fcd3977571bfb57c5f87276193f7e4))
+* bump coverallsapp/github-action in the dependencies group ([3bbc323](https://www.github.com/JaCraig/Corset/commit/3bbc323fc2cb1604a24985b1b4857afc9c5a3144))
+* bump the dependencies group with 2 updates ([badc9e5](https://www.github.com/JaCraig/Corset/commit/badc9e5f27e30d27679dd3ab24867a64a4db9509))
+* Refactor versionize command in dotnet-publish workflow ([551be72](https://www.github.com/JaCraig/Corset/commit/551be725b6958ac39fd898db5ecae196eb31d13c))
+
 <a name="4.0.46"></a>
 ## [4.0.46](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.46) (2024-10-14)
 
