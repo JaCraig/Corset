@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.51"></a>
+## [4.0.51](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.51) (2024-11-15)
+
+### Bug Fixes
+
+* bump Canister.IoC from 5.3.18 to 5.4.3 in the dependencies group ([d9a67e0](https://www.github.com/JaCraig/Corset/commit/d9a67e05cbec5881a9b029d1154df20bdca457ca))
+
+### Other
+
+* Merge pull request #257 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-23db35b6a2 ([c45dfeb](https://www.github.com/JaCraig/Corset/commit/c45dfeb0e713c20928765607e146026c9c88b278))
+* Merge pull request #258 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-956fc5c724 ([c8a95bd](https://www.github.com/JaCraig/Corset/commit/c8a95bd6734597972df0bd696118e36f0c3c241d))
+* Merge pull request #259 from JaCraig/dependabot/nuget/dependencies-84079e5e3f ([fd3e054](https://www.github.com/JaCraig/Corset/commit/fd3e054ed3e20601a5d9a773577be0c055b2286c))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([0ce9756](https://www.github.com/JaCraig/Corset/commit/0ce9756aadbf335fef34c05a006a00f8dce01a7b))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([cbe426c](https://www.github.com/JaCraig/Corset/commit/cbe426cd47763ca4d2ac312d0eccd41d693fefe5))
+
 <a name="4.0.50"></a>
 ## [4.0.50](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.50) (2024-11-11)
 
