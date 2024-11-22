@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.0"></a>
+## [5.0.0](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.0) (2024-11-22)
+
+### Features
+
+* Refactor and update project configuration and files ([b63baee](https://www.github.com/JaCraig/Corset/commit/b63baee24d14e89c9716ea15a3ff825aab8976ef))
+
+### Breaking Changes
+
+* Refactor and update project configuration and files ([b63baee](https://www.github.com/JaCraig/Corset/commit/b63baee24d14e89c9716ea15a3ff825aab8976ef))
+
+### Other
+
+* Merge pull request #260 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-617062173c ([597fff7](https://www.github.com/JaCraig/Corset/commit/597fff77db1e3e4719ae49d69b9a20636e7375d1))
+* Another attempt to get info ([93c31b1](https://www.github.com/JaCraig/Corset/commit/93c31b1df0dee89463fd76640f2317c45f79c0f2))
+* Another test fix ([98f641e](https://www.github.com/JaCraig/Corset/commit/98f641e21010b0d83b222edafe91de7d8dd81d2b))
+* attempting to fix GZip tests ([650f929](https://www.github.com/JaCraig/Corset/commit/650f929177948434ce62ce3d76544dd630571f2e))
+* bump Microsoft.NET.Test.Sdk ([a963e95](https://www.github.com/JaCraig/Corset/commit/a963e958b2bed07b45a73de72d239c563633a891))
+* Update README and docfx.json for clarity and .NET 8.0 ([5dde532](https://www.github.com/JaCraig/Corset/commit/5dde53212357d119f8aa41fc533467480d31c233))
+
 <a name="4.0.51"></a>
 ## [4.0.51](https://www.github.com/JaCraig/Corset/releases/tag/v4.0.51) (2024-11-15)
 
