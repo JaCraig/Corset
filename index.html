@@ -76,7 +76,10 @@
 <p><a href="https://github.com/JaCraig/Corset/actions/workflows/dotnet-publish.yml"><img src="https://github.com/JaCraig/Corset/actions/workflows/dotnet-publish.yml/badge.svg" alt=".NET Publish"></a> <a href="https://coveralls.io/github/JaCraig/Corset?branch=master"><img src="https://coveralls.io/repos/github/JaCraig/Corset/badge.svg?branch=master" alt="Coverage Status"></a></p>
 <p>Corset is a library designed to simplify compression in .Net. By default it supports Deflate and GZip but can be expanded upon to support other types of compression.</p>
 <h2 id="basic-usage">Basic Usage</h2>
-<p>uses a library called Canister for registering itself in your ServiceCollection:</p>
+<p>The library is designed to be as simple as possible to use. However you do need to register it with your service collection so it can find the compressors:</p>
+<pre><code>servicecollection.AddCorset();
+</code></pre>
+<p>Or if you are using Canister:</p>
 <pre><code>servicecollection.AddCanisterModules();
 </code></pre>
 <p>This line is required prior to using the extension methods for the first time. Once Canister is set up, you can call the extension methods provided:</p>
