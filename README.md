@@ -6,7 +6,11 @@ Corset is a library designed to simplify compression in .Net. By default it supp
 
 ## Basic Usage
 
-uses a library called Canister for registering itself in your ServiceCollection:
+The library is designed to be as simple as possible to use. However you do need to register it with your service collection so it can find the compressors:
+
+    servicecollection.AddCorset();
+
+Or if you are using Canister:
 
     servicecollection.AddCanisterModules();
 	
