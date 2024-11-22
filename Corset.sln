@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BF0D01F7-4A40-4B0D-8971-6FBCF4B45549}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corset", "src\Corset\Corset.csproj", "{2DE26C22-1C5E-486A-AC8D-6A76D7256C8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corset", "Corset\Corset.csproj", "{2DE26C22-1C5E-486A-AC8D-6A76D7256C8F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corset.Tests", "Corset.Tests\Corset.Tests.csproj", "{F644D6B0-9A4A-48AF-ADAB-A9A78DB70063}"
 EndProject

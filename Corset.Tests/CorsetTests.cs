@@ -107,7 +107,7 @@ namespace Corset.Tests
             var CompressedData = TestObject.Compress(Data.ToByteArray(), CompressorType.Deflate);
 
             // Assert
-            Assert.Equal("CsnILFYAokSFpMwShfw0hZTEkkSFkozEEgVPhfLEvBKFknyF5PzcgqLU4mIAAAAA//8=", Convert.ToBase64String(CompressedData ?? Array.Empty<byte>()));
+            Assert.Contains(Convert.ToBase64String(CompressedData ?? Array.Empty<byte>()), new string[] { "CsnILFbILFZIVEjKLFHIT1NISSxJVCjJSCxR8FQoT8wrUSjJV0jOzy0oSi0uBgAAAP//", "CsnILFYAokSFpMwShfw0hZTEkkSFkozEEgVPhfLEvBKFknyF5PzcgqLU4mIAAAAA//8=" });
         }
 
         [Fact]

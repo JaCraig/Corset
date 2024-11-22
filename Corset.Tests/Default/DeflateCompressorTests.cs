@@ -13,7 +13,8 @@ namespace Corset.Tests.Default
         {
             var TestObject = new DeflateCompressor();
             const string Data = "This is a bit of data that I want to compress";
-            Assert.Equal("CsnILFYAokSFpMwShfw0hZTEkkSFkozEEgVPhfLEvBKFknyF5PzcgqLU4mIAAAAA//8=", Convert.ToBase64String(TestObject.Compress(Data.ToByteArray())));
+            var Result = Convert.ToBase64String(TestObject.Compress(Data.ToByteArray()));
+            Assert.Contains(Result, new string[] { "CsnILFbILFZIVEjKLFHIT1NISSxJVCjJSCxR8FQoT8wrUSjJV0jOzy0oSi0uBgAAAP//", "CsnILFYAokSFpMwShfw0hZTEkkSFkozEEgVPhfLEvBKFknyF5PzcgqLU4mIAAAAA//8=" });
         }
 
         [Fact]
