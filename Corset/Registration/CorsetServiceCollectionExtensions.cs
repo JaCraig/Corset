@@ -15,6 +15,8 @@ namespace Corset.Registration
         /// <returns>The modified <see cref="IServiceCollection"/> instance.</returns>
         public static IServiceCollection? AddCorset(this IServiceCollection? services)
         {
+            if (services.Exists<Corset>())
+                return services;
             return services?.AddAllTransient<ICompressor>()
                            ?.AddSingleton<Corset>();
         }
