@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.1"></a>
+## [5.0.1](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.1) (2024-11-24)
+
+### Bug Fixes
+
+* Update .editorconfig and enhance AddCorset method ([a9869af](https://www.github.com/JaCraig/Corset/commit/a9869afac1931e21a9765138d6f75b6f7b223997))
+
+### Other
+
+* merge ([8a3813b](https://www.github.com/JaCraig/Corset/commit/8a3813bd647687edae6e1db067d5dac677e5573a))
+
 <a name="5.0.0"></a>
 ## [5.0.0](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.0) (2024-11-22)
 
