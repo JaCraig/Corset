@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.2"></a>
+## [5.0.2](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.2) (2024-11-26)
+
+### Bug Fixes
+
+* Update tests: add BigBook extensions, upgrade Mecha.xUnit ([14465de](https://www.github.com/JaCraig/Corset/commit/14465dec089a97a81a489432593f3b5fb569213b))
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.1) (2024-11-24)
 
