@@ -1,4 +1,5 @@
 ﻿using BigBook;
+using BigBook.ExtensionMethods;
 using Corset.Enums;
 using Corset.Tests.BaseClasses;
 using System;
