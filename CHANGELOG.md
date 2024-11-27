@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.3"></a>
+## [5.0.3](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.3) (2024-11-27)
+
+### Bug Fixes
+
+* Update husky and versionize tool versions, add rollForward option ([9a899ed](https://www.github.com/JaCraig/Corset/commit/9a899ed7e85f217983935436b2a20031f6ed1ec9))
+
+### Other
+
+* Merge branch 'master' of https://github.com/JaCraig/Corset ([054399f](https://www.github.com/JaCraig/Corset/commit/054399f24974621b2bd08851ab83bdf13178d11d))
+
 <a name="5.0.2"></a>
 ## [5.0.2](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.2) (2024-11-26)
 
