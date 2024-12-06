@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.4"></a>
+## [5.0.4](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.4) (2024-12-06)
+
+### Bug Fixes
+
+* bump husky from 0.7.1 to 0.7.2 in /Corset in the dependencies group ([0b63ede](https://www.github.com/JaCraig/Corset/commit/0b63edecb6a4828a67d8adbe8635913c8243a7e0))
+
+### Other
+
+* Merge pull request #262 from JaCraig/dependabot/nuget/Corset/dependencies-0eb5dce03c ([6bdd540](https://www.github.com/JaCraig/Corset/commit/6bdd540727dff35aaa663d601a77079b32541913))
+
 <a name="5.0.3"></a>
 ## [5.0.3](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.3) (2024-11-27)
 
