@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.5"></a>
+## [5.0.5](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.5) (2025-01-28)
+
+### Bug Fixes
+
+* bump versionize in /Corset in the dependencies group ([0d081e5](https://www.github.com/JaCraig/Corset/commit/0d081e54ac8b5feede7db61f2fc72788b05bde7b))
+
+### Other
+
+* Merge pull request #263 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-ae4dc51d69 ([703582b](https://www.github.com/JaCraig/Corset/commit/703582b0501e311bb648281a5999f0baae098e92))
+* Merge pull request #264 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-637ad84d5b ([2c28a43](https://www.github.com/JaCraig/Corset/commit/2c28a43611c5df4b38ed33eada2beb7a630ebed7))
+* Merge pull request #265 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-37a7915f86 ([a2471e0](https://www.github.com/JaCraig/Corset/commit/a2471e0da27099c090b306c68daaff3873635927))
+* Merge pull request #266 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-dac939b906 ([20c49ab](https://www.github.com/JaCraig/Corset/commit/20c49ab53352aa10e43b22238737cd23f83b7b9d))
+* Merge pull request #267 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-ed63622fe2 ([bc07b75](https://www.github.com/JaCraig/Corset/commit/bc07b75e15586f9df121d104e53a70be783dda00))
+* Merge pull request #268 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-a3eea154c6 ([c3e1cfc](https://www.github.com/JaCraig/Corset/commit/c3e1cfc4854dea64e78ee8d563c1dc04707f7928))
+* Merge pull request #269 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-7fe5cb5319 ([963ca07](https://www.github.com/JaCraig/Corset/commit/963ca0701d5142d744011bc465bdd5f46d2bb1a0))
+* Merge pull request #270 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-cdc5eca79b ([09ebf0a](https://www.github.com/JaCraig/Corset/commit/09ebf0a4b3610bb20d70b943f6c6d58a9e5c697c))
+* Merge pull request #271 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-b09a967ee8 ([a869048](https://www.github.com/JaCraig/Corset/commit/a86904826d5f6a6d17ddaed9f180b4f3fb2b9634))
+* Merge pull request #272 from JaCraig/dependabot/nuget/Corset/dependencies-836e21bf11 ([ad7b705](https://www.github.com/JaCraig/Corset/commit/ad7b705a71b59d252b46202ee81ade53e384fe65))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([e1748f5](https://www.github.com/JaCraig/Corset/commit/e1748f5bb7a63c24716720ab7828ae3c261643cf))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([744aeca](https://www.github.com/JaCraig/Corset/commit/744aeca51701011608ce34bb77f8d348ae8f6920))
+* bump Mecha.xUnit in /Corset.Tests in the dependencies group ([5292add](https://www.github.com/JaCraig/Corset/commit/5292adddd741b5a54565e4a82d3431e12c47fe2b))
+* bump the dependencies group in /Corset.Tests with 2 updates ([38a0204](https://www.github.com/JaCraig/Corset/commit/38a02045cb98eb8846917749c7043003be6c94fb))
+* bump the dependencies group in /Corset.Tests with 2 updates ([7faae10](https://www.github.com/JaCraig/Corset/commit/7faae10a235a8be30065a3198e699fe0e55c2d0f))
+* bump the dependencies group in /Corset.Tests with 2 updates ([33c3622](https://www.github.com/JaCraig/Corset/commit/33c362269a8ca326f2252ba812e37d4a25c53423))
+* bump the dependencies group in /Corset.Tests with 3 updates ([e393776](https://www.github.com/JaCraig/Corset/commit/e3937761da787780eb7df7099156af0d60949478))
+* bump xunit in /Corset.Tests in the dependencies group ([77f970b](https://www.github.com/JaCraig/Corset/commit/77f970b1f1809c7d44860c4e223b6c6867987597))
+* bump xunit.runner.visualstudio ([7c3843c](https://www.github.com/JaCraig/Corset/commit/7c3843c01a716702cfddc931a8d5173ca4078f43))
+
 <a name="5.0.4"></a>
 ## [5.0.4](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.4) (2024-12-06)
 
