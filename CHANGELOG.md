@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.7"></a>
+## [5.0.7](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.7) (2025-06-27)
+
+### Bug Fixes
+
+* **dependabot:** correct formatting of patterns in configuration ([b91e3c1](https://www.github.com/JaCraig/Corset/commit/b91e3c1d8cb90b8a6ad37094ee65401868d56477))
+
 <a name="5.0.6"></a>
 ## [5.0.6](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.6) (2025-06-21)
 
