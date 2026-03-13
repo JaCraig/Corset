@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.11"></a>
+## [5.0.11](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.11) (2026-03-13)
+
+### Bug Fixes
+
+* Bump the dependencies group with 2 updates ([801881e](https://www.github.com/JaCraig/Corset/commit/801881e8f50dbde13c19314bd717c45936814334))
+
+### Other
+
+* Merge pull request #324 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-1dbec82130 ([0f929ea](https://www.github.com/JaCraig/Corset/commit/0f929ea1fe15f3d5f25a7e151db38e6299780ec2))
+* Merge pull request #326 from JaCraig/dependabot/nuget/dot-config/dependencies-00f2f2657b ([3c70882](https://www.github.com/JaCraig/Corset/commit/3c70882522bc20cbee5c51006c60335a247e5ee6))
+* Merge pull request #327 from JaCraig/dependabot/nuget/dot-config/dependencies-6aa2227991 ([cb47204](https://www.github.com/JaCraig/Corset/commit/cb472042987f9a5272ddedf396e456c1fed6f21a))
+* Bump the dependencies group with 3 updates ([964d179](https://www.github.com/JaCraig/Corset/commit/964d179f8a5b53650a76a7ee50f1c4319640c7a0))
+* Bump the dependencies group with 3 updates ([871803c](https://www.github.com/JaCraig/Corset/commit/871803caa8902ccb7db4450eef0011033b09d3cc))
+
 <a name="5.0.10"></a>
 ## [5.0.10](https://www.github.com/JaCraig/Corset/releases/tag/v5.0.10) (2026-03-11)
 
