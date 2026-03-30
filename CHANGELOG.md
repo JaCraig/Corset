@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.1"></a>
+## [5.1.1](https://www.github.com/JaCraig/Corset/releases/tag/v5.1.1) (2026-03-30)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([bbf3bb0](https://www.github.com/JaCraig/Corset/commit/bbf3bb08157ddff52e665032638e400f23b687c4))
+
+### Other
+
+* Merge pull request #331 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-0ce86e337c ([77ff781](https://www.github.com/JaCraig/Corset/commit/77ff781181b727f4cc05e506e80ffa589530493c))
+* Merge pull request #332 from JaCraig/dependabot/nuget/Corset/dependencies-773c7d6aa0 ([7d4625c](https://www.github.com/JaCraig/Corset/commit/7d4625c5d4830ab5bd542fed0b0c49cab82cc041))
+* Bump the dependencies group with 2 updates ([1cd778b](https://www.github.com/JaCraig/Corset/commit/1cd778b4da69f86d86b76cc262fb444ec5c5a25f))
+
 <a name="5.1.0"></a>
 ## [5.1.0](https://www.github.com/JaCraig/Corset/releases/tag/v5.1.0) (2026-03-29)
 
