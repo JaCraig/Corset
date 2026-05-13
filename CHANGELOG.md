@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.9"></a>
+## [5.1.9](https://www.github.com/JaCraig/Corset/releases/tag/v5.1.9) (2026-05-13)
+
+### Bug Fixes
+
+* Bump the dependencies group with 2 updates ([d22eba1](https://www.github.com/JaCraig/Corset/commit/d22eba1f57773e6b797a7b2532bbdb5357fcb713))
+
+### Other
+
+* Enhance commit-lint.csx with detailed failure reasons ([ea712c3](https://www.github.com/JaCraig/Corset/commit/ea712c38c52d3cbecc7f7394056645c2b99868b6))
+* Merge pull request #343 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-205fefde64 ([4e41992](https://www.github.com/JaCraig/Corset/commit/4e41992b5324822cdd59b26768c674cb170ec86e))
+* Merge pull request #344 from JaCraig/dependabot/nuget/Corset/dependencies-f357f12100 ([0a2df2d](https://www.github.com/JaCraig/Corset/commit/0a2df2d994741d6347128b1c948942ee80172f52))
+* Merge pull request #345 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-62d33a97ab ([b81751b](https://www.github.com/JaCraig/Corset/commit/b81751b506d1d9e46cc35bf70d2a20dfd3742266))
+* Merge pull request #346 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-6568161f5c ([86e72e4](https://www.github.com/JaCraig/Corset/commit/86e72e40539e2e6f006e5b466ae82924192a14cd))
+* Merge pull request #347 from JaCraig/dependabot/nuget/Corset/dependencies-116d79d185 ([5f2c265](https://www.github.com/JaCraig/Corset/commit/5f2c26559540dbc832b1dfc04bf1f515bf2602f6))
+* Bump the dependencies group with 1 update ([7fa67ca](https://www.github.com/JaCraig/Corset/commit/7fa67ca281c0726be69948ec25189ad32679df73))
+* Bump the dependencies group with 1 update ([aa1bc7d](https://www.github.com/JaCraig/Corset/commit/aa1bc7d785c8883624433e7d1e58403050f2c080))
+* Bump the dependencies group with 2 updates ([91c56f9](https://www.github.com/JaCraig/Corset/commit/91c56f932caca5771d0a3dacf370b0334b62820c))
+* Bump the dependencies group with 2 updates ([d3cd653](https://www.github.com/JaCraig/Corset/commit/d3cd6538f19a561218d25d689abc42c7adf722ca))
+
 <a name="5.1.8"></a>
 ## [5.1.8](https://www.github.com/JaCraig/Corset/releases/tag/v5.1.8) (2026-04-24)
 
