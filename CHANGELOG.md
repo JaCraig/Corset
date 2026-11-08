@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.14"></a>
+## [5.1.14](https://www.github.com/JaCraig/Corset/releases/tag/v5.1.14) (2026-11-08)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([b918753](https://www.github.com/JaCraig/Corset/commit/b9187534704f91b3334d7c4d0a1347095e517964))
+* Bump the dependencies group with 2 updates ([9be32f8](https://www.github.com/JaCraig/Corset/commit/9be32f8354168aab9b8be95148aedfbed034aeb0))
+* Bump the dependencies group with 2 updates ([0aca15d](https://www.github.com/JaCraig/Corset/commit/0aca15de3862dcf022a5396d0173baa7ab19ec4c))
+* **workflow:** update permissions and enhance publish steps ([77bb360](https://www.github.com/JaCraig/Corset/commit/77bb360abb8a51e2dba318c643ab3017f110d737))
+
+### Other
+
+* Merge pull request #363 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-fe4a1e8f47 ([a7469d8](https://www.github.com/JaCraig/Corset/commit/a7469d8724332d5305bb627ba7c2c9936fdfefc9))
+* Merge pull request #364 from JaCraig/dependabot/nuget/dot-config/dependencies-87dec4854d ([4663170](https://www.github.com/JaCraig/Corset/commit/466317003dc4ee3c277db00cc097bccbd5ee7ff5))
+* Merge pull request #365 from JaCraig/dependabot/nuget/Corset/dependencies-39d8d9731f ([72f8340](https://www.github.com/JaCraig/Corset/commit/72f83406fa4bef5c033aa083bfbcd8308cbc1ad8))
+* Merge pull request #366 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-3e8ca8d6b6 ([8976235](https://www.github.com/JaCraig/Corset/commit/897623519e0453fdfa5f3ba452f22e24c1e3c0cd))
+* Merge pull request #367 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-8af17d2a0f ([ba7f6fd](https://www.github.com/JaCraig/Corset/commit/ba7f6fd73aceaea9675e0b13e79910c041b19651))
+* Merge pull request #368 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-1aaad36d12 ([33c6b8a](https://www.github.com/JaCraig/Corset/commit/33c6b8a11d0acf43e56852f451cd644b7694884c))
+* Merge pull request #369 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-ac2dbdb488 ([2839470](https://www.github.com/JaCraig/Corset/commit/28394709760e543ba40593c163b146a8dfa16c49))
+* Merge pull request #370 from JaCraig/dependabot/nuget/Corset/dependencies-c1ede9f7c1 ([e101076](https://www.github.com/JaCraig/Corset/commit/e1010763bff6a35f4a9d4af1ddf065f070da9148))
+* Merge pull request #371 from JaCraig/dependabot/nuget/Corset/dependencies-f4803d6dd8 ([a9812e1](https://www.github.com/JaCraig/Corset/commit/a9812e192bb5b6ebf832c427dfd88a156b83b509))
+* Merge pull request #372 from JaCraig/dependabot/nuget/Corset/dependencies-f4803d6dd8 ([56bdcda](https://www.github.com/JaCraig/Corset/commit/56bdcda27ee93b8849511deee1209ae31a4f6c65))
+* Bump the dependencies group with 1 update ([0186381](https://www.github.com/JaCraig/Corset/commit/01863817a3e5d1b16f9cb82a5628106bfe3fdfd7))
+* Bump the dependencies group with 1 update ([4536e7d](https://www.github.com/JaCraig/Corset/commit/4536e7dfa554ca5cb3ed00f3da87ab818339bf2e))
+* Bump the dependencies group with 1 update ([09fa82a](https://www.github.com/JaCraig/Corset/commit/09fa82a3aa56b7437329509b43b6f7d64cf10884))
+* Bump the dependencies group with 2 updates ([7d71b5d](https://www.github.com/JaCraig/Corset/commit/7d71b5d26df7e70d4a7fed09a38d0134c85a88da))
+* Bump the dependencies group with 2 updates ([3ce0ca2](https://www.github.com/JaCraig/Corset/commit/3ce0ca26d86cc5710c5f608deda6b4133ad2db16))
+* Bump the dependencies group with 2 updates ([3f6b950](https://www.github.com/JaCraig/Corset/commit/3f6b9500ea6c33784d07490704c1ee2a3c81177f))
+* Bump the dependencies group with 4 updates ([2ba8f74](https://www.github.com/JaCraig/Corset/commit/2ba8f74a8121e1761d134228b58e468f31732858))
+
 <a name="5.1.13"></a>
 ## [5.1.13](https://www.github.com/JaCraig/Corset/releases/tag/v5.1.13) (2026-08-18)
 
