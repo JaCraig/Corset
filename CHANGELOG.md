@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="6.0.0"></a>
+## [6.0.0](https://www.github.com/JaCraig/Corset/releases/tag/v6.0.0) (2026-11-12)
+
+### Features
+
+* **frameworks:** target .NET 10 and 11 ([defe786](https://www.github.com/JaCraig/Corset/commit/defe7869b12b720bc530b5ded50504ef398eacda))
+
+### Breaking Changes
+
+* **frameworks:** target .NET 10 and 11 ([defe786](https://www.github.com/JaCraig/Corset/commit/defe7869b12b720bc530b5ded50504ef398eacda))
+
+### Other
+
+* Merge pull request #373 from JaCraig/dependabot/nuget/Corset.Tests/dependencies-b38859fd83 ([5e1b3b2](https://www.github.com/JaCraig/Corset/commit/5e1b3b286568f98824a646492de552520c886d14))
+* Merge pull request #374 from JaCraig/dependabot/nuget/Corset/dependencies-bfb49b253a ([2e28fd3](https://www.github.com/JaCraig/Corset/commit/2e28fd359f3fbf885d9a8a4d6e445447450ae83e))
+* Bump the dependencies group with 1 update ([08ea1d4](https://www.github.com/JaCraig/Corset/commit/08ea1d48c27a17b7a4fe29dab0e852d89411fbf5))
+* Bump the dependencies group with 2 updates ([26fd313](https://www.github.com/JaCraig/Corset/commit/26fd313d57b4bb0a69582b768d6a8ab8a9817da8))
+
 <a name="5.1.14"></a>
 ## [5.1.14](https://www.github.com/JaCraig/Corset/releases/tag/v5.1.14) (2026-11-08)
 
